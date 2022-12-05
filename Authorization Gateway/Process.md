@@ -374,7 +374,7 @@ The Authorization Gateway XML data packet may contain the following elements:
 | SSN4: | Contains the last four digits of the consumer’s social security number. The SSN4 must be 4 numeric characters. |
 | DOB_YEAR: | Contains the date of birth of the consumer. The date of birth must be 4 numeric characters begin with either 19 or 20. |
 | CHECK: | Contains all of the elements for the check. |
-| CHECK_AMOUNT: | Contains the amount of the check and should be between $0.01 and $999999.99. |
+| CHECK_AMOUNT: | Contains the amount of the check and should be between $0.01 and $9999999999.99. |
 | IMAGE_FRONT: | Contains the image data for the check front. Image data must be base64. |
 | SIZE: | The size attribute contains the image size in bytes. The size can be expressed as a decimal. |
 | TYPE: | The type attribute contains the content type of the image. Valid TYPE values are “tiff”. |
@@ -468,7 +468,7 @@ The Authorization Gateway XML data packet may contain the following elements:
 | SSN4: | Contains the last four digits of the consumer’s social security number. The SSN4 must be 4 numeric characters. |
 | DOB_YEAR: | Contains the date of birth of the consumer. The date of birth must be 4 numeric characters begin with either 19 or 20. |
 | CHECK: | Contains all of the elements for the check. |
-| CHECK_AMOUNT: | Contains the amount of the check and should be between $0.01 and $999999.99. |
+| CHECK_AMOUNT: | Contains the amount of the check and should be between $0.01 and $9999999999.99. |
 | IMAGE_FRONT: | Contains the image data for the check front. Image data must be base64. |
 | SIZE: | The size attribute contains the image size in bytes. The size can be expressed as a decimal. |
 | TYPE: | The type attribute contains the content type of the image. Valid TYPE values are “tiff”. |
