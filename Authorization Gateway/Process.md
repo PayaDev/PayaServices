@@ -1,3 +1,4 @@
+
 # Overview
 
 The Authorization Gateway is designed to accommodate various input requirements based on a given terminal’s settings. This allows for the development of a single interface that can be easily configured to handle many different scenarios.
@@ -607,7 +608,7 @@ Corresponding XSD Template
 XML Templates
 | **WEB**                                                    | Certification Terminal ID                |             |              |           |             |                       |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|-------------|-----------------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/WEB%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/WEB%20Templates) |
+|                                                            |  | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/WEB%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/WEB%20Templates) |
 | CheckNoVerificationDLOptional                          | 2310                              |             |              |           | [XML](/Authorization%20Gateway/XML/Standard/WEB%20Templates/CheckNoVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/WEB%20Templates/CheckNoVerificationDLWithTokenOptional.xml)                   |
 | CheckNoVerificationDLRequired                          | 2311                              |      X      |              |           | [XML](/Authorization%20Gateway/XML/Standard/WEB%20Templates/CheckNoVerificationDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/WEB%20Templates/CheckNoVerificationDLWithTokenRequired.xml)                   |
 | CheckVerificationIdentityVerificationDLOptional       | 2312                              |             |       X      |     X     | [XML](/Authorization%20Gateway/XML/Standard/WEB%20Templates/CheckVerificationIdentityVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/WEB%20Templates/CheckVerificationIdentityVerificationDLWithTokenOptional.xml)                   |
@@ -624,7 +625,7 @@ Corresponding XSD Template
 
 | **WEB**                                                    | Certification Terminal ID                |             |              |           |                |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/WEB%20Schemas) |
+|                                                            |  | DL Required | Verify Check | Verify ID |[XSD Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/WEB%20Schemas) |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       |
 | Ng_CheckNoVerificationDLOptional                          | 2310                              |             |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/WEB%20Schemas/Ng_CheckNoVerificationDLOptional.xsd)                 |
 | Ng_CheckNoVerificationDLRequired                          | 2311                              |      X      |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/WEB%20Schemas/Ng_CheckNoVerificationDLRequired.xsd)                 |
@@ -674,7 +675,7 @@ Corresponding XSD Template
 XML Templates
 | **POP**                                                    | Certification Terminal ID                |             |              |           |             |                       |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|-------------|-----------------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/POP%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/POP%20Templates) |
+|                                                            |  | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/POP%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/POP%20Templates) |
 | CheckNoVerificationDLOptional                          | 1110                              |             |              |           | [XML](/Authorization%20Gateway/XML/Standard/POP%20Templates/CheckNoVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/POP%20Templates/CheckNoVerificationDLWithTokenOptional.xml)                   |
 | CheckNoVerificationDLRequired                          | 1111                              |      X      |              |           | [XML](/Authorization%20Gateway/XML/Standard/POP%20Templates/CheckNoVerificationDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/POP%20Templates/CheckNoVerificationDLWithTokenRequired.xml)                   |
 | CheckVerificationIdentityVerificationDLOptional       | 1112                              |             |       X      |     X     | [XML](/Authorization%20Gateway/XML/Standard/POP%20Templates/CheckVerificationIdentityVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/POP%20Templates/CheckVerificationIdentityVerificationDLWithTokenOptional.xml)                   |
@@ -691,7 +692,7 @@ Corresponding XSD Template
 
 | **POP**                                                    | Certification Terminal ID                |             |              |           |                |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas) |
+|                                                            |  | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas) |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       |
 | CheckNoVerificationDLOptional                          | 1110                              |             |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas/CheckNoVerificationDLOptional.xsd)                 |
 | CheckNoVerificationDLRequired                          | 1111                              |      X      |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas/CheckNoVerificationDLRequired.xsd)                 |
@@ -707,7 +708,7 @@ Corresponding XSD Template
 XML Templates
 | **Check21**                                                    | Certification Terminal ID                |             |              |           |             |                       |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|-------------|-----------------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/Check21%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/Check21%20Templates) |
+|                                                            |  | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/Check21%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/Check21%20Templates) |
 | CheckNoVerificationDLOptional                          | 1610                              |             |              |           | [XML](/Authorization%20Gateway/XML/Standard/Check21%20Templates/CheckNoVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/Check21%20Templates/CheckNoVerificationDLWithTokenOptional.xml)                   |
 | CheckNoVerificationDLRequired                          | 1611                              |      X      |              |           | [XML](/Authorization%20Gateway/XML/Standard/Check21%20Templates/CheckNoVerificationDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/Check21%20Templates/CheckNoVerificationDLWithTokenRequired.xml)                   |
 | CheckVerificationIdentityVerificationDLOptional       | 1612                              |             |       X      |     X     | [XML](/Authorization%20Gateway/XML/Standard/Check21%20Templates/CheckVerificationIdentityVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/Check21%20Templates/CheckVerificationIdentityVerificationDLWithTokenOptional.xml)                   |
@@ -724,7 +725,7 @@ Corresponding XSD Template
 
 | **Check21**                                                    | Certification Terminal ID                |             |              |           |                |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/Check21%20Schemas) |
+|                                                            |  | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/Check21%20Schemas) |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       |
 | CheckNoVerificationDLOptional                          | 1610                              |             |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/Check21%20Schemas/CheckNoVerificationDLOptional.xsd)                 |
 | CheckNoVerificationDLRequired                          | 1611                              |      X      |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/Check21%20Schemas/CheckNoVerificationDLRequired.xsd)                 |
@@ -740,7 +741,7 @@ Corresponding XSD Template
 XML Templates
 | **BOC**                                                    | Certification Terminal ID                |             |              |           |             |                       |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|-------------|-----------------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/BOC%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/BOC%20Templates) |
+|                                                            |  | DL Required | Verify Check | Verify ID | [XML Example](/Authorization%20Gateway/XML/Standard/BOC%20Templates) | [XML Example with Token](/Authorization%20Gateway/XML/With%20Tokens/BOC%20Templates) |
 | CheckNoVerificationDLOptional                          | 1510                              |             |              |           | [XML](/Authorization%20Gateway/XML/Standard/BOC%20Templates/CheckNoVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/BOC%20Templates/CheckNoVerificationDLWithTokenOptional.xml)                   |
 | CheckNoVerificationDLRequired                          | 1511                              |      X      |              |           | [XML](/Authorization%20Gateway/XML/Standard/BOC%20Templates/CheckNoVerificationDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/BOC%20Templates/CheckNoVerificationDLWithTokenRequired.xml)                   |
 | CheckVerificationIdentityVerificationDLOptional       | 1512                              |             |       X      |     X     | [XML](/Authorization%20Gateway/XML/Standard/BOC%20Templates/CheckVerificationIdentityVerificationDLOptional.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/BOC%20Templates/CheckVerificationIdentityVerificationDLWithTokenOptional.xml)                   |
@@ -757,7 +758,7 @@ Corresponding XSD Template
 
 | **BOC**                                                    | Certification Terminal ID                |             |              |           |                |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/BOC%20Schemas) |
+|                                                            |  | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/BOC%20Schemas) |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       |
 | CheckNoVerificationDLOptional                          | 1510                              |             |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/BOC%20Schemas/CheckNoVerificationDLOptional.xsd)                 |
 | CheckNoVerificationDLRequired                          | 1511                              |      X      |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/BOC%20Schemas/CheckNoVerificationDLRequired.xsd)                 |
