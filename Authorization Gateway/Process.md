@@ -280,6 +280,22 @@ The data packet is an XML string sent using the AuthGatewayCertification, Proces
 _NOTE:  Methods with Token will operate the same as those without tokens. Tokens are used in place of Account Type, Routing Number, and Account Number._
 
 
+#### **What do the different identifiers mean?**
+Each request XML Data Packet must contain a valid identifier for its schema. The identifier you use will change depending on the context of the transaction being sent. Your integration team will become more familiar with the different identifiers as you begin to work on each milestone. However, a list of all the valid identifiers can be found below.  
+
+•	**Authorize (A):** This is used in schemas for POP, TEL, WEB, BOC and Check 21 to indicate that an authorization is requested for the XML Data Packet being sent.  It is also used to process credit transactions.
+
+•	**Recurring (R):** This is used in schemas for PPD, CCD, TEL and WEB to indicate that an authorization is requested for a single or reoccurring transaction.
+
+•	**Void (V):** This is used in schemas for PPD, CCD, POP, TEL, WEB, and Check 21 to void a previously authorized transaction. However, it should be noted that transactions can only be voided on the same calendar day they were authorized.
+
+•	**Override (O):**  This is used in schemas for POP, TEL, and Check 21 when the host system receives a manager needed message to void the previous transaction and input a new transaction in its place.
+
+•	**Payroll (P):** This is used in schemas for POP and Check 21 for business and payroll checks. What this does is NOT link the driver’s license to the routing/ account numbers since the person writing/cashing the check is usually not the business.
+
+•	**Update (U):** This is used in schemas for POP and Check 21 for OCR transactions that already have complete data in the data packet. It forces the transaction to run as a normal POP or Check 21 transaction on an OCR terminal. This is normally done when a change is needed to a transaction that was submitted under a normal OCR transaction. Example: A transaction is sent through using the OCR engine. The data that is returned does not match the image. If the transaction was still successful and a change is warranted, a Void Transaction is sent. Then another transaction with updated data (from the response and corrected from user) is sent back through the system with a complete data packet and “U” as the identifier. If the transaction failed, other actions will need to be taken.
+
+
 
 ### **Authorization Gateway XML Data Packet Example**:
 
