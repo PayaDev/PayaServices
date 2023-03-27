@@ -40,6 +40,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Authorization Gateway XML Data Packet Example](Process.md#authorization-gateway-xml-data-packet-example)
      - [Authorization Gateway XML Data Packet with Token Example](Process.md#authorization-gateway-xml-data-packet-with-token-example)
 6. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
+     - [Special Characters](Process.md#Special-Characters)
      - [Standard XML & XSD Templates](Process.md#standard-templates)  
 		- [PPD Templates](Process.md#ppd-templates)  
 		- [CCD Templates](Process.md#ccd-templates)  
@@ -519,6 +520,7 @@ XML: [Authorization%20Gateway/XML/Standard/PPD%20Templates/CheckVerificationIden
 
 XSD: [Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed/CheckVerificationIdentityVerificationDLOptional.xsd](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed/CheckVerificationIdentityVerificationDLOptional.xsd)
 
+# Special Characters
 ***Note about Special Characters:** Because the Data packet is XML, some special characters must be escaped to be included in the data. Please see the examples in the table below.*
 
 |     Special Character    |     Symbol    |     Escaped Form     |
