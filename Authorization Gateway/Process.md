@@ -249,15 +249,15 @@ The GetCertificationTerminalSettings and GetTerminalSettings web methods will re
 ```XML
 <?xml version=”1.0” encoding=”utf-8”?>
 <TERMINAL_SETTINGS xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” xmlns:xsd=”http://www.w3.org/2001/XMLSchema”>
-  <TERMINAL_ID>2318</TERMINAL_ID>
+  <TERMINAL_ID>2310</TERMINAL_ID>
   <SEC_CODE>WEB</SEC_CODE>
   <IS_GATEWAY_TERMINAL>true</IS_GATEWAY_TERMINAL>
   <ALLOW_CNSMR_CREDITS>false</ALLOW_CNSMR_CREDITS>
   <DL_REQUIRED>false</DL_REQUIRED>
   <RUN_CHECK_VERIFICATION>false</RUN_CHECK_VERIFICATION>
   <RUN_IDENTITY_VERIFICATION>false</RUN_IDENTITY_VERIFICATION>
-  <SCHEMA_FILE_PATH>http://localhost/geti.emagnus.webservices/Schemas/WEB/Ng_CheckNoVerificationDLOptional.xsd</SCHEMA_FILE_PATH>
-  <XML_TEMPLATE_PATH>http://localhost/geti.emagnus.webservices/Schemas/WEB/Templates/CheckNoVerificationDLOptional.xml</XML_TEMPLATE_PATH>
+  <SCHEMA_FILE_PATH>https://demo.eftchecks.com/webservices/Schemas/WEB/Ng_CheckNoVerificationDLOptional.xsd</SCHEMA_FILE_PATH>
+  <XML_TEMPLATE_PATH>https://demo.eftchecks.com/webservices/Schemas/WEB/Templates/CheckNoVerificationDLOptional.xml</XML_TEMPLATE_PATH>
 </TERMINAL_SETTINGS>
 ```
 The Terminal Settings XML will contain the following elements:
