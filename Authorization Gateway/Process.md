@@ -14,7 +14,8 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 2. [Connection Method](Process.md#connection-method)
 3. [Submission](Process.md#submissions)
      - [SOAP Header](Process.md#soap-header)
-4. [Web Methods](Process.md#web-methods)
+5. [Web Methods](Process.md#web-methods)
+     - [SEC Codes](Process.md#What-are-the-different-Standard-Entry-Class-(SEC)-Codes?)
      - [Certification Methods](Process.md#certification-methods)
      	- [Certification Web Methods](Process.md#certification-methods)
       		- [GetCertificationTerminalSetttings](Process.md#getcertificationterminalsettings)
@@ -35,11 +36,11 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 	      	- [ProcessSingleCheckWithToken](Process.md#processsinglecheckwithtoken)
 	      	- [GetToken](Process.md#gettoken)
 	      	- [ParseMICR](Process.md#parsemicr)
-5. [Data Packet - XML Specification](Process.md#data-packet--xml-specification)
+6. [Data Packet - XML Specification](Process.md#data-packet--xml-specification)
      - [Terminal Settings - XML Specification](Process.md#terminal-settings---xml-specification)
      - [Authorization Gateway XML Data Packet Example](Process.md#authorization-gateway-xml-data-packet-example)
      - [Authorization Gateway XML Data Packet with Token Example](Process.md#authorization-gateway-xml-data-packet-with-token-example)
-6. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
+7. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
      - [Special Characters](Process.md#Special-Characters)
      - [Standard XML & XSD Templates](Process.md#standard-templates)  
 		- [PPD Templates](Process.md#ppd-templates)  
@@ -55,9 +56,9 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 		- [Templates for Mobile](Process.md#templates-for-mobile) 
 			- [Pop Templates for Mobile](Process.md#pop-xml-teamplates-for-mobile)  
 			- [Check21 Templates for Mobile](Process.md#check21-xml-templates-for-mobile)
-7. [Data Types](Process.md#data-types)
-8. [Validation Handling](Process.md#validation-handling)
-9. [Responses](Process.md#responses)
+8. [Data Types](Process.md#data-types)
+9. [Validation Handling](Process.md#validation-handling)
+10. [Responses](Process.md#responses)
      - [Validation Messages Response](Process.md#validation-message-response)
      	- [Validation Message Example - Success Response](Process.md#validation-message-response)
      	- [Validation Message Example - Failure Response](Process.md#validation-message-example--failure-response)
@@ -67,7 +68,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Authorization Message Response with Token](Process.md#authorization-message-response-with-token)
      	- [Authorization Message Example with Token](Process.md#authorization-message-example-with-token)
 			
-10. [Single Certification Check Types](Process.md#single-certification-check-types)		
+11. [Single Certification Check Types](Process.md#single-certification-check-types)		
      - [Process Single Certification Check - Check Limit Exceeded](Process.md#check-limit-exceeded)
      - [Process Single Certification Check - Decline](Process.md#decline)
      - [Process Single Certification Check - Void](Process.md#void)
@@ -77,15 +78,15 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Process Single Certification Check - Represented Check](Process.md#represented-check)
      - [Process Single Certification Check - No ACH](Process.md#no-ach)
      - [Process Single Certification Check - MICR ERROR](Process.md#micr-error)
-11. [Exception Handling](Process.md#exception-handling)
+12. [Exception Handling](Process.md#exception-handling)
      - [EXCEPTION Element - Example as a child of the RESPONSE element](Process.md#exception-element--example-as-a-child-of-the-response-element)
-12. [Request an Archived Response](Process.md#request-an-archived-response)
-13. [Sample Code](Process.md#sample-code)     
+13. [Request an Archived Response](Process.md#request-an-archived-response)
+14. [Sample Code](Process.md#sample-code)     
 	- [VB.NET](Process.md#vbnet)
 	- [C#](Process.md#c)
 	- [SOAP Message Sample](Process.md#soap-message-sample)
-14. [Code Sample Kits](Process.md#code-sample-kits)
-15. [Contact Information](Process.md#contact-information)
+15. [Code Sample Kits](Process.md#code-sample-kits)
+16. [Contact Information](Process.md#contact-information)
 
 
 # **Connection Method**
@@ -120,6 +121,19 @@ The SOAP header will need the following fields:
    </AuthGatewayHeader>
 </soap:Header>
 ```
+
+#### **What are the different Standard Entry Class (SEC) Codes?**
+The Authorization Gateway uses the Standard Entry Class (SEC) codes to determine what information is required to be sent in the submission. The National Automated Clearing House Association (NACHA) requires the use of SEC Codes for each transaction settled through the Automated Clearing House (ACH).  Each code identifies what type of transaction occurred. In addition, the SEC_CODE element in the response XML Data Packet form the GetCertificationTerminalSettings web method will include the SEC code used from the terminal ID provided.  A definition of each of the SEC codes used by the Authorization Gateway can be found below.
+
+•	**Prearranged Payment and Deposit Entry (PPD)**: A prearranged payment and deposit entry is either a standing or single entry authorization where the funds are transferred to or from a consumers account. 
+•	**Corporate Credit or Debit (CCD)**: A prearranged payment and deposit entry is either a standing or single entry authorization where the funds are transferred to or from a business account. 
+•	**Internet Initiated Entry (WEB)**:  An internet initiated entry is a method of payment for goods or services made via the internet.     
+•	**Telephone Initiated Entry (TEL)**: A telephone initiated entry is a payment for goods or services made with a single entry debit with oral authorization obtained from the consumer via the telephone.  
+•	**Point-of-Purchase Entry (POP)**:  The Point-of-Purchase method of payment is for purchases made for goods or services in person by the consumer.  These are non-recurring debit entries. A check reading device must be used to capture the routing number, account number, and check number from the source document (check). The source document cannot be previously used for any prior POP entry, and the source document must be voided and returned to the customer at the point-of-purchase. In addition, a signed receipt must be obtained at the point-of-purchase and retained for 2 years from the settlement date. The “Authorization Requirements” section in the Authorization Gateway Specification document contains additional information on the receipt requirements.
+•	**Check 21 (C21)**:  Although not an SEC Code C21 is used to denote Check 21 transactions. Check 21 requires a check reading device capture the routing number, account number, and check number from the source document (Check) as well as capture images of both the front and back of the source document.  
+•	**Back Office Conversion Entry (BOC)**: A single debit entry to an account for in-person purchases or payments made at the point-of-purchase.
+
+**Please note, each SEC code has Authorization requirements which can be viewed [here](/Authorization%20Gateway/REQUIRED%20Authorization.md).**
 
 # **Web Methods**
 A definition of the web methods can be found below. Each web method contains a hyperlink to a sample SOAP request and response.
