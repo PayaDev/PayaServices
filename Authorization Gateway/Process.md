@@ -15,7 +15,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 3. [Submission](Process.md#submissions)
      - [SOAP Header](Process.md#soap-header)
 5. [Web Methods](Process.md#web-methods)
-     - [SEC Codes](Process.md#What-are-the-different-Standard-Entry-Class-(SEC)-Codes?)
+     - [SEC Codes](Process.md#what-are-the-different-standard-entry-class-sec-codes)
      - [Certification Methods](Process.md#certification-methods)
      	- [Certification Web Methods](Process.md#certification-methods)
       		- [GetCertificationTerminalSetttings](Process.md#getcertificationterminalsettings)
