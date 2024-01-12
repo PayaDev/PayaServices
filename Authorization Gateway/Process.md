@@ -166,6 +166,7 @@ Before you are able to go into production, Paya Services requires that you certi
   |     490000047           |     Re-Presented   Check    |
   |     490000050           |     No   ACH                |
   |     490000015           |     MICR   ERROR            |
+  |	490000024	|	DECLINE CHECK, E-CODE FLAG	|	
 
   - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheck.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheck.md#request-1)
   - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheck.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheck.md#response-1)
