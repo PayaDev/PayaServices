@@ -381,7 +381,7 @@ The Authorization Gateway XML data packet may contain the following elements:
 | MERCHANT: | Contains all of the elements for the merchant. |
 | TERMINAL_ID: | Contains the ID for the Terminal. The Terminal ID will be numeric value. |
 | PACKET: | Contains all of the elements for packet. |
-| IDENTIFIER: | Contains a value that identifies the packet being sent as an Authorization, Void, Override, or Payroll transaction. The identifier is a single alpha character. A list of identifiers follows, but valid identifiers will vary by schema. A=Authorize, R=Recurring, V=Void, F = Reversal, O=Override, P=Payroll, U=Update |
+| IDENTIFIER: | Contains a value that identifies the packet being sent as an Authorization, Void, Override, or Payroll transaction. The identifier is a single alpha character. A list of identifiers follows, but valid identifiers will vary by schema. A=Authorize, R=Recurring, V=Void, F = Reversal(***Not Supported for Check 21**), O=Override, P=Payroll, U=Update |
 | NOTE: | Identifier R (Recurring) is in name only. We will NOT run the transaction more than once. |
 | CONTROL_CHAR: | Contains a value that identifies the information in the packet as being entered manually or retrieved from a check reader. Valid control characters are as follows: M=Manual, S=Swipe. |
 | VERIFICATION_ONLY: | Contains a true or false value identifying if the transaction should be processed as verification only. NOTE: The Boolean data type in the XSD will require that true/false be all lower case. |
