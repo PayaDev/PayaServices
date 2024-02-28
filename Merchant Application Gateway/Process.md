@@ -45,7 +45,7 @@ https://demo.eftchecks.com/webservices/AppGateway.asmx
 
 A username and password for certification will be provided upon request.
 
-_NOTE:  A live webservice address, username, and password will be supplied upon successful certification._
+_NOTE:  A live webservice address, username, and password will be supplied upon successful certification. **These credentials are unique to your solution and should be obfuscated in your code and not be shared with anyone.**_
 
 # **Supported Electronic Applications**
 
