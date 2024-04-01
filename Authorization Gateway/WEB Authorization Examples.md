@@ -67,13 +67,13 @@ Below is an example screen capture at time of consumer authorized transaction vi
 
  **For DEMONSTRATION purposes ONLY.**
 
-![Sample Authorization Page](/Authorization%20Gateway/assets/images/Review.jpg?raw=true)
+![Sample Authorization Page](/Authorization%20Gateway/Assets/Images/Review.jpg)
 
 
 Below is an example reproduction of the data saved at time of consumer authorized transaction via the web.
 
 **For DEMONSTRATION purposes ONLY.**
 
-![Sample Receipt](/Authorization%20Gateway/assets/images/Receipt.jpg?raw=true)
+![Sample Receipt](/Authorization%20Gateway/Assets/Images/Receipt.jpg?raw=true)
 
-![Sample Results](/Authorization%20Gateway/assets/images/Results.jpg?raw=true)
+![Sample Results](/Authorization%20Gateway/Assets/Images/Results.jpg?raw=true)
