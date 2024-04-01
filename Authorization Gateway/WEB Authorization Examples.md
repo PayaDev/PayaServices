@@ -1,4 +1,4 @@
-**WEB Authorization Requirements**
+# **WEB Authorization Requirements**
 
 Merchant MUST receive a Customer authorization for internet initiated (WEB) entries prior to processing ACH debit transaction Requirements are below.
 Authorization:
@@ -60,20 +60,21 @@ The following information must be included in the authorization reproduced recor
 - Statement of how the consumer’s identity was authenticated
 Additional information not shown on the website can be included to document proof of authorization.
 
+
 > [!IMPORTANT]
 > The following screenshots are for demonstration purposes only.
 
 Below is an example screen capture at time of consumer authorized transaction via the web.
 
- **For DEMONSTRATION purposes ONLY.**
+<p align="center"> **For DEMONSTRATION purposes ONLY.**
 
-![Sample Authorization Page](/Authorization%20Gateway/Assets/Images/Review.jpg)
+<p align="center"> <img src=/Authorization%20Gateway/Assets/Images/Review.jpg width="500" height="500" border="10"/> 
 
 
 Below is an example reproduction of the data saved at time of consumer authorized transaction via the web.
 
-**For DEMONSTRATION purposes ONLY.**
+<p align="center">**For DEMONSTRATION purposes ONLY.**
 
-![Sample Receipt](/Authorization%20Gateway/Assets/Images/Receipt.jpg?raw=true)
+<p align="center"> <img src=/Authorization%20Gateway/Assets/Images/Receipt.jpg width="500" height="500" border="10"/>
 
-![Sample Results](/Authorization%20Gateway/Assets/Images/Results.jpg?raw=true)
+<p align="center"> <img src=/Authorization%20Gateway/Assets/Images/Results.jpg width="300" height="100" border="10"/>
