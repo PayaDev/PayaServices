@@ -58,6 +58,8 @@ The following information must be included in the authorization record:
  - Consumer Banking information
  - Statement of how the consumer’s identity was authenticated 
 
+Examples of WEB authorizations can be found at [here](/Authorization%20Gateway/WEB%20Authorization%20Examples.md).
+
 ## **Recorded Authorization TEL**
 
 For telephone initiated (TEL) entries the receiver must have the following verbiage (or substantially similar) read and captured on the recorded customer authorization.  Additionally, the authorization must provide the Receiver with the method to revoke his authorization by notifying the Originator in the manner prescribed, and the time frame in which the revocation of the authorization must be provided.
