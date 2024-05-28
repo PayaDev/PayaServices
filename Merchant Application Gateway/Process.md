@@ -525,6 +525,9 @@ The data packet is an XML string sent using the BoardCertificationMerchant_X and
 ```
 
 ## **The Application Gateway XML data packet may contain the following elements:**
+<Details>
+<summary><i>Click to expand</i></summary>
+	
 |Field|Description|
 |:---|:---|
 | ENVELOPE | Is the parent element and contains all other elements within the New Merchant XML document. | 
@@ -639,6 +642,7 @@ The data packet is an XML string sent using the BoardCertificationMerchant_X and
 | TERM OCR | (Optional) Indicate if the terminal is OCR: 1 for yes, 0 for no. |
 | TERM MRDC | (Optional) Indicate if the terminal is MRDC: 1 for yes, 0 for no. |
 | TERM CLONE FROM TERMINAL ID | Contains the ID for the terminal to copy. The [Terminal ID] is expected as a numeric value. |                                                                                            |
+</Details>
 
 ## **XML Samples**
 
@@ -761,6 +765,9 @@ The example Schema file paths would be as follows:
 Each web method in the Application Gateway will return an XML string and detail the success or failure of the submission.  If the application is accepted the following is a sample of an XML response that will be returned.
 
 ### The Gateway XML response may contain the following elements:
+<Details>
+<summary><i>Click to expand</i></summary>
+	
 | Reponse Field | Subfield | Description  |
 |-----|-----|-----|
 | STATUS:	| | Will contain a   text description of the overall status for the application. Status will either be “Approved” or “Pending”.	|	
@@ -785,7 +792,7 @@ Each web method in the Application Gateway will return an XML string and detail 
 | |  Active  |  Contains a 1; Indicating that the terminal is active.  |
 | | CrossRefID  |  Contains a user defined ID for cross referencing the terminal. |
 | ManualEntry: | |   Contains a type used for internal purposes. |
-
+</Details>
 
 ### **Response Message – Example Success Response**
 
