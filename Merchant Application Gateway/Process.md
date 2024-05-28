@@ -760,13 +760,40 @@ The example Schema file paths would be as follows:
 ## **Response**
 Each web method in the Application Gateway will return an XML string and detail the success or failure of the submission.  If the application is accepted the following is a sample of an XML response that will be returned.
 
+### The Gateway XML response may contain the following elements:
+| Reponse Field | Subfield | Description  |
+|-----|-----|-----|
+| STATUS:	| | Will contain a   text description of the overall status for the application. Status will either be “Approved” or “Pending”.	|	
+| MESSAGE: | | Will contain a summary of the success or failure of the merchant application. | 
+| APP_DATA: | |   Contains the detailed Merchant, Location, and Terminal elements. |
+| Merchant: | |   Contains the following attributes: |
+| |  ID  |  Contains the numerical ID for the merchant.  |
+| |  Name  |  Contains the text name of the merchant.  |
+| |  Type  |  Contains the element type. (Merchant)  |
+| |  Active  |  Contains a 1; Indicating that the merchant is active.  |
+| | CrossRefID  |  Contains a user defined ID for cross referencing the merchant. |
+| Location: | |   Contains the following attributes: |
+| |  ID  |  Contains the numerical ID for the Location.  |
+| |  Name  |  Contains the text name of the Location.  |
+| |  Type  |  Contains the element type. (Location)  |
+| |  Active  |  Contains a 1; Indicating that the Location is active.  |
+| | CrossRefID  |  Contains a user defined ID for cross referencing the merchant. |
+|  Terminal: | |   Contains the following attributes: |  | 
+| |  ID  |  Contains the numerical ID for the terminal.  |
+| |  Name  |  Contains the text name of the terminal.  |
+| |  Type  |  Contains the terminal type.   |
+| |  Active  |  Contains a 1; Indicating that the terminal is active.  |
+| | CrossRefID  |  Contains a user defined ID for cross referencing the terminal. |
+| ManualEntry: | |   Contains a type used for internal purposes. |
+
+
 ### **Response Message – Example Success Response**
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-	<RESPONSE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<STATUS>Approved</STATUS>
-<MESSAGE>1 merchant(s) created.
+<RESPONSE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <STATUS>Approved</STATUS>
+ <MESSAGE>1 merchant(s) created.
 0 merchant(s) not created due to errors.
 
 -----------------------
@@ -774,88 +801,62 @@ Merchants Created:
 Test Merchant ACH 1 (ISO ID: 9999, CrossRef: 261407, Status: AppApprovedandActivated)
 
 </MESSAGE>
-  <APP_DATA>
-    <Merchant 
-		ID="20" 
-		Name="Test Merchant ACH 1" 
-		Type="Merchant" 
-		Active="1" 
-		CrossRefID="261407">
-		<POC1 
-			  FirstName="John" 
-			  LastName="Doe" 
-			  UserName="JDoe" 
-			  Password="6E550E2V" />
-		<Location 
-			  ID="31" 
-			  Name="Test Merchant " 
-			  Type="Location" 
-			  Active="1" 
-			  CrossRefID="261407" 
-			  ACHName="TESTMERCHANT">
-			<Terminal 
-				ID="111163" 
-				Name="Lipman Nurit 3000-01 (111163) " 
-				Type="Terminal" 
-				Active="1" 
-				CrossRefID="41680" 
-				ManualEntry="N" 
-                                         MID="101-111163-609" />
-			<Terminal 
-				ID="111164" 
-				Name="Hypercom T7+-02 (111164) " 
-				Type="Terminal" 
-				Active="1" 
-				CrossRefID="53317" 
-				ManualEntry="N" 
-				MID="101-111164-609" />
-			<Terminal 
-				ID="111165" 
-				Name="Hypercom T4100-03 (111165) " 
-				Type="Terminal" 
-				Active="1" 
-				CrossRefID="296223" 
-				ManualEntry="N" 
-				MID="101-111165-609" />
-			<Terminal 
-				ID="111166" 
-				Name="Lipman Nurit 3000-04 (111166) " 
-				Type="Terminal" 
-				Active="1" 
-				CrossRefID="296228" 
-				ManualEntry="N" 
-				MID="101-111166-609" />
-			<Terminal 
-				ID="111167" 
-				Name="Hypercom T4100-05 (111167) " 
-				Type="Terminal" 
-				Active="1" 
-				CrossRefID="296225" 
-				ManualEntry="N" 
-				MID="101-111167-609" />
-		</Location>
-    </Merchant>
-  </APP_DATA>
-	<VALIDATION_MESSAGE>
-		<RESULT>Passed</RESULT>
-		<SCHEMA_FILE_PATH />
-	</VALIDATION_MESSAGE>
+ <APP_DATA>
+  <Merchant ID="20" Name="Test Merchant ACH 1" Type="Merchant" Active="1" CrossRefID="261407">
+   <POC1 FirstName="John" LastName="Doe" UserName="JDoe" Password="6E550E2V"/>
+   <Location ID="31" Name="Test Merchant " Type="Location" Active="1" CrossRefID="261407" ACHName="TESTMERCHANT">
+    <Terminal ID="111163" Name="Lipman Nurit 3000-01 (111163) " Type="Terminal" Active="1" CrossRefID="41680" ManualEntry="N" MID="101-111163-609"/>
+    <Terminal ID="111164" Name="Hypercom T7+-02 (111164) " Type="Terminal" Active="1" CrossRefID="53317" ManualEntry="N" MID="101-111164-609"/>
+   </Location>
+  </Merchant>
+ </APP_DATA>
+ <VALIDATION_MESSAGE>
+  <RESULT>Passed</RESULT>
+  <SCHEMA_FILE_PATH/>
+ </VALIDATION_MESSAGE>
 </RESPONSE>
 ```
 
-### The Application Gateway XML response may contain the following elements:
+### **RetrieveMerchantStatus Response Message – Example Success Response**
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RetrieveMerchantStatusResponse xmlns="http://tempuri.org/GETI.eMagnus.WebServices/AppGateway">
+      <RetrieveMerchantStatusResult><?xml version="1.0"?>
+        <RESPONSE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <STATUS>Approved</STATUS>
+          <MESSAGE>Merchant Approved</MESSAGE>
+          <APP_DATA>
+            <Merchant ID="12345678" Name="Demo Merchant (C " Type="Merchant" Active="1" CrossRefID="">
+              <POC1 FirstName="Demo" LastName="POC" UserName="Demo" Password="DemoPass!"/>
+                <Terminal ID="1234567" Name="DEMOGATEWAY CCD TEST ACCOUNT (1234567) " Type="Terminal" Active="1" CrossRefID="" ManualEntry="N" MID="4641-1234567-5234"/>
+              </Location>
+            </Merchant>
+          </APP_DATA>
+          <VALIDATION_MESSAGE>
+            <RESULT>Passed</RESULT>
+            <SCHEMA_FILE_PATH/>
+          </VALIDATION_MESSAGE>
+        </RESPONSE>
+      </RetrieveMerchantStatusResult>
+    </RetrieveMerchantStatusResponse>
+  </soap:Body>
+</soap:Envelope>
+```
 
-|     STATUS:         |     Will contain a   text description of the overall status for the application. Status will   either be “Approved” or “Failed”.                                                                                                                                                                                              |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     MESSAGE:        |     Will contain a   summary of the success or failure of the merchant application.                                                                                                                                                                                                                                           |
-|     APP_DATA:       |     Contains the detailed   Merchant, Location, and Terminal elements.                                                                                                                                                                                                                                                        |
-|     Merchant:       |     Contains the   following attributes:                                                                                                                                                                                                                                                                                      |
-|                     |     ID:   Contains   the numerical ID for the merchant.     Name:   Contains   the text name of the merchant.     Type:   Contains   the element type. (Merchant)     Active:   Contains   a 1; Indicating that the merchant is active.     CrossRefID:  Contains a user defined ID for cross   referencing the merchant.     |
-|     Location:       |     Contains the   following attributes:                                                                                                                                                                                                                                                                                      |
-|                     |     ID:   Contains   the numerical ID for the location     Name:   Contains   the text name of the location.     Type:   Contains   the element type. (Location)     Active:   Contains   a 1; Indicating that the merchant is active.     CrossRefID:   Contains   a user defined ID for cross referencing the location.     |
-|     Terminal:       |     Contains the   following attributes:                                                                                                                                                                                                                                                                                      |
-|                     |     ID:   Contains   the numerical ID for the terminal.     Name:   Contains   the text name of the terminal.     Type:   Contains   the element type. (Terminal)     Active:   Contains   a 1; Indicating that the merchant is active.     CrossRefID:   Contains   a user defined ID for cross referencing the terminal.    |
-|     ManualEntry:    |      Contains a type used for internal purposes.                                                                                                                                                                                                                                                                              |
+| Status  | API Message Value  | Description |
+|------|------|------|
+| Approved | Merchant Approved | The account was approved for service. |
+| Pending | Merchant Declined by Underwriting | The account was declined for service. |
+| Pending | Merchant Cancelled By BP | The account was cancelled due to returns, non-compliant, rejected fees/debits. |
+| Pending | Merchant Cancelled By Merchant | The merchant requested to close/cancel their service. |
+| Pending | Merchant Incomplete | The merchant didn’t provide the required information or merchant withdrew request prior to being sent to underwriting. |
+| Pending | Merchant Pending Input | Application team is in the process of boarding the account. |
+| Pending | Merchant Pending Missing Information | Application is missing required information or documents. |
+| Pending | Merchant Pending Risk Managemnt | Underwriter is reviewing the account with management. |
+| Pending | Merchant Pending Underwriting | Application is being reviewed by the underwriter. | 
+
 
 ## **Exceptions**
 
