@@ -1085,6 +1085,7 @@ You should note that the returned information for a voided transaction contains 
 
 ### **Reversal**
 **Not Supported for Check 21 transactions**
+
 When reversing a previously approved single certification check you will need to invoke the ProcessSingleCertificationCheck web method and set the routing number to 490000018, 490000021, or 490000047 in the ROUTING_NUMBER element of the request XML Data Packet. You will also have to set the value of the IDENTIFER element to “F”.  This milestone has been built into the development phase so that you can incorporate this functionality into your host system. If the request XML Data Packet is valid then a Reversal identifier for previously approved transaction with the routing numbers noted above will trigger the Authorization Gateway to return a response with the following information to the host system:
 
  - RESPONSE_TYPE:  A
