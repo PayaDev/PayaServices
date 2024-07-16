@@ -546,6 +546,9 @@ XSD: [Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20G
 |     Quotes               |     “         |     \&quot;          |
 |     Apostrophe           |     ‘         |     \&apos;          |
 
+> [!IMPORTANT]
+> If you are wanting to pass "&" as part of the name fields, you must send it as "\&amp;amp;" for it to pass XSD validation and convert to "&".
+
 ## **Standard Templates**
 
 
