@@ -551,6 +551,21 @@ XSD: [Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20G
 
 ## **Standard Templates**
 
+> [!IMPORTANT]  
+> A special note about Credit transactions (i.e. where you are initiating a new transaction to debit the merchant and credit a consumer, and not refunding a previous transaction) - please use the below testing terminals as address information is required for compliance purposes.
+
+
+| **PPD**  | Certification Terminal ID  | |  |  
+|----|----|----|----|
+|  | Guaranteed 1000's  Non-Guaranteed 2000's |  [XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](https://demo.eftchecks.com/webservices/schemas/PPD) |
+| CreditCheckNoVerificationDLOptional  |  1818/2818 | [XSD](http://demo.eftchecks.com/webservices/Schemas/PPD/CreditCheckNoVerificationPhoneOptional.xsd) |  [XSD](http://demo.eftchecks.com/webservices/Schemas/PPD/Ng_CreditCheckNoVerificationPhoneOptional.xsd) |
+
+
+| **CCD**  | Certification Terminal ID  | |  |  
+|----|----|----|----|
+|  | Guaranteed 1000's  Non-Guaranteed 2000's | [XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](https://demo.eftchecks.com/webservices/schemas/PPD) |
+| CreditCheckNoVerificationDLOptional  |  1918/2918 | [XSD](http://demo.eftchecks.com/webservices/Schemas/CCD/CreditCheckNoVerificationPhoneOptional.xsd) |  [XSD](http://demo.eftchecks.com/webservices/Schemas/CCD/Ng_CreditCheckNoVerificationPhoneOptional.xsd) |
+
 
 
 ### PPD Templates
