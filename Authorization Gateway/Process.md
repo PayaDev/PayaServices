@@ -304,7 +304,9 @@ Each request XML Data Packet must contain a valid identifier for its schema. The
 
 •	**Recurring (R):** This is used in schemas for PPD, CCD, TEL and WEB to indicate that an authorization is requested for a single or reoccurring transaction.
 
-•	**Void (V):** This is used in schemas for PPD, CCD, POP, TEL, WEB, and Check 21 to void a previously authorized transaction. However, it should be noted that transactions can only be voided on the same calendar day they were authorized.
+•	**Void (V):** This is used in schemas for PPD, CCD, POP, TEL, WEB, and Check 21 to void a previously authorized transaction. The transaction information must match exactly the previous transaction, including routing number, account number, and amount. However, it should be noted that transactions can only be voided on the same calendar day they were authorized. 
+
+•	**Reversal (F):** This is used in schemas for PPD, CCD, POP, TEL, and WEB to refund a transaction from a previous calendar day. The transaction information must match exactly the previous transaction, including routing number, account number, and amount. Check 21 transactions are not eligible for reversals.
 
 •	**Override (O):**  This is used in schemas for POP, TEL, and Check 21 when the host system receives a manager needed message to void the previous transaction and input a new transaction in its place.
 
