@@ -229,6 +229,13 @@ Definition and hyperlink to sample SOAP request and response.
   - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheck.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheck.md#request-1)
   - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheck.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheck.md#response-1)
 
+- #### [**ProcessSingleCheckAndGetTransAuthNum**](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckAndGetTransAuthNum.md)
+  
+  - **Description**:  This method will run the authorization for a single check based on the settings for the terminal.
+  - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckAndGetTransAuthNum.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckAndGetTransAuthNum.md#request-1)
+  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckAndGetTransAuthNum.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckAndGetTransAuthNum.md#response-1)
+
+
 - #### [**GetArchivedResponse**](/Authorization%20Gateway/Web%20Methods/Production%20Methods/GetArchivedResponse.md)
   - **Description**:  This method will retrieve a response for a previously processed transaction.
   - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/GetArchivedResponse.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/GetArchivedResponse.md#request-1)
