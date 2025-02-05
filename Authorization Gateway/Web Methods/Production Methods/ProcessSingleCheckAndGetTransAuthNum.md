@@ -1,5 +1,6 @@
 **Input**:  
 - Accepts an XML string called a data packet that must conform to the terminals schema provided in the Terminal Settings.
+- In addition to the fields for ProcessSingleCheck, this also allows control of voiding specific transactions via the TRANSACTION_ID and TRANSACTION_AUTH_NUMBER field.
   
 **Output**:  
 - Outputs an XML string.
