@@ -1,3 +1,4 @@
+
 # **Overview**
 
 Our Application Gateway is designed to accommodate various input requirements, allowing development of a single interface configured to handle many different scenarios.
@@ -96,6 +97,27 @@ Before you are able to go into production, Paya Services requires that you certi
 
 ### **ACH Certification Methods**
 
+- [**BoardCertificationMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md)
+
+  - **Description**:  This method will process an ACH and Check21 merchant application and return a detail success or failure response.  This method is used during interface testing and certification.  
+  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#request-1)
+  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#response-1)
+
+- [**BoardCertificationLocations**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md)
+
+  - **Description**:  This method will process an ACH and Check21 location application and return a detail success or failure response.  This method is used during interface testing and certification.
+  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#request-1)
+  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#response-1)
+
+- [**CreateCertificationTerminals**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md)
+
+  - **Description**:  This method will process an ACH and Check21 terminal application to add a terminal to an EXISTING merchant location and return a detail success or failure response. It does not require a terminal to clone. The method also allows a terminal to be boarded for a new Program. This method is used during interface testing and certification.
+  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#request-1)
+  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#response-1)
+
+<Details>
+<summary><i>Old Methods - Click to expand</i></summary>
+
 - [**BoardCertificationMerchant_ACH**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/ACH/BoardCertificationMerchant_ACH.md)
 
   - **Description**:  This method will process an ACH merchant application and return a detail success or failure response.  This method is used during interface testing and certification.  
@@ -169,6 +191,8 @@ Before you are able to go into production, Paya Services requires that you certi
   - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/Gift/CreateCertificationTerminal_Gift.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/Gift/CreateCertificationTerminal_Gift.md#request-1)
   - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/Gift/CreateCertificationTerminal_Gift.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/Gift/CreateCertificationTerminal_Gift.md#response-1)
 
+</Details>
+
 ### **Other Certification Methods**
 
 - [**UploadCertificationSupportingDocs**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/UploadCertificationSupportingDocs.md)
@@ -223,27 +247,35 @@ Before you are able to go into production, Paya Services requires that you certi
   - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#request-1)
   - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#response-1)
 
-- [**BoardCertificationMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md)
-
-  - **Description**:  This method will process an ACH and Check21 merchant application and return a detail success or failure response.  This method is used during interface testing and certification.  
-  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#request-1)
-  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md#response-1)
-
-- [**BoardCertificationLocations**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md)
-
-  - **Description**:  This method will process an ACH and Check21 location application and return a detail success or failure response.  This method is used during interface testing and certification.
-  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#request-1)
-  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md#response-1)
-
-- [**CreateCertificationTerminals**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md)
-
-  - **Description**:  This method will process an ACH and Check21 terminal application to add a terminal to an EXISTING merchant location and return a detail success or failure response. It does not require a terminal to clone. The method also allows a terminal to be boarded for a new Program. This method is used during interface testing and certification.
-  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#request-1)
-  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md#response-1)
-
 ## Production Methods
 
 Once you have **certified** with our Paya Services team you will need to use the Production Methods listed below to create live transaction within the banking system.
+
+## **Merchant Boarding**
+
+- [**BoardMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md)
+
+   - **Replaces**:  [**BoardCertificationMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md)
+   - **Description**:  This method will process an ACH and Check21 merchant application and return a detail success or failure response.
+   - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#request-1)
+   - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#response-1)
+  
+- [**BoardLocations**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md)
+
+  - **Replaces**:  [**BoardCertificationLocations**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md)
+  - **Description**:  This method will process an ACH and Check21 location application to add a location to an EXISTING merchant and return a detail success or failure response.
+  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#request-1)
+  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#response-1)  
+
+- [**CreateTerminals**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md)
+
+  - **Replaces**:  [**CreateCertificationTerminals**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md)
+  - **Description**:  This method will process an ACH and Check21 terminal application to add a terminal to an EXISTING merchant location and return a detail success or failure response. It does not require a terminal to clone. The method also allows a terminal to be boarded for a new Program.
+  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#request-1)
+  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#response-1)
+
+<Details>
+<summary><i>Old Methods - Click to expand</i></summary>
 
 ### **ACH Production Methods**
 
@@ -334,6 +366,8 @@ Once you have **certified** with our Paya Services team you will need to use the
 	 - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/Gift/CreateTerminal_Gift.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/Gift/CreateTerminal_Gift.md#request-1)
 	 - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/Gift/CreateTerminal_Gift.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/Gift/CreateTerminal_Gift.md#response-1)
 
+</Details>
+
 ### **Other Productions Methods**
 
 - [**UploadSupportingDocs**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/UploadSupportingDocs.md)
@@ -394,27 +428,6 @@ Once you have **certified** with our Paya Services team you will need to use the
   - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/RequestMerchantCancellation.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/RequestMerchantCancellation.md#request-1)
   - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/RequestMerchantCancellation.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/RequestMerchantCancellation.md#response-1)  
 
-- [**BoardMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md)
-
-   - **Replaces**:  [**BoardCertificationMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md)
-   - **Description**:  This method will process an ACH and Check21 merchant application and return a detail success or failure response.
-   - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#request-1)
-   - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardMerchants.md#response-1)
-  
-- [**BoardLocations**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md)
-
-  - **Replaces**:  [**BoardCertificationLocations**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationLocations.md)
-  - **Description**:  This method will process an ACH and Check21 location application to add a location to an EXISTING merchant and return a detail success or failure response.
-  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#request-1)
-  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/BoardLocations.md#response-1)  
-
-- [**CreateTerminals**](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md)
-
-  - **Replaces**:  [**CreateCertificationTerminals**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/CreateCertificationTerminals.md)
-  - **Description**:  This method will process an ACH and Check21 terminal application to add a terminal to an EXISTING merchant location and return a detail success or failure response. It does not require a terminal to clone. The method also allows a terminal to be boarded for a new Program.
-  - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#request-1)
-  - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Production%20Methods/CreateTerminals.md#response-1)
-
 # **Data Packet – XML Specification**
 The data packet is an XML string sent using the BoardCertificationMerchant_X and BoardMerchant_X web methods.  The XML data packet must conform to the XSD specified for the transaction type.
 
@@ -429,99 +442,144 @@ The data packet is an XML string sent using the BoardCertificationMerchant_X and
 |     Apostrophe           |     ‘         |     \&apos;          |
 
 ## **Merchant Application XML Example**
-
+The DataPacket in this example has not been escaped, and will not work as is. It is provided as an example only.
 ```XML
-<Envelope>
-	<Body 
-	          FileName="261407_28_May_2009_12_05_00_590.xml" 
-	          FileDate="2009-05-28T12:05:00.590">
-	<NewMerchant 
-		isoID="9999" 
-		merchCrossRefID="261407" 
-		merchName="Test Merchant ACH 1" 
-		merchTypeID="49" 
-		merchServiceType="GOLD" 
-		merchAddress1="123 Main Street" 
-		merchCity="Destin" 
-		merchState="FL" 
-		merchZip="32541" 
-		merchPhone="1231231234" 
-		merchAchFlatFee="0.29" 
-		merchNonAchFlatFee="0.29" 
-		merchPercentFee="1.89" 
-		merchComments="Food market" 
-		merchReturnFee="1.00">
-		     <BusinessInfo 
-			merchOwnership="3" 
-			merchAvgCheckAmount="50.00" 
-			merchMaxCheckAmount="200.00" 
-			merchTotalTimeInBusiness="456"/>
-		     <NewLocation 
-			locName="Test Merchant" 
-			locCrossRefID="261407" 
-			locAddress1="123 Main Street" 
-			locCity="Destin" 
-			locState="FL" 
-			locZip="32541" 
-			locPhone="1231231234" 
-			locStatementFee="10.00" 
-			locMinimumFee="25.00" 
-			locFeesRoutingNum="490000018" 
-			locFeesAccountNum="123456789">
-			locTaxPayerID="123456789">
-			locTaxPayerName="Test">
-			     <Statement 
-				locStatementAddress1="PO Box 1234" 
-				locStatementCity="Destin" 
-				locStatementState="FL" 
-				locStatementZip="32541" 
-				locStatementAttn="John Doe"/>
-			     <NewPOC 
-				pocPrimary="1" 
-				pocFirstName="John" 
-				pocLastName="Doe" 
-				pocTitle="Owner" 
-				pocComments="" 
-				pocAddress="123 Main Street" 
-				pocCity="Destin" 
-				pocState="FL" 
-				pocZip="32541" 
-				pocDOB="1945-10-26" 
-				pocSSN="123121111"/>
-			     <NewTerminal 
-				termCrossRefID="41680" 
-				termCheckLimit="500.00" 
-				termPeripheral="63" 
-				termTypeID="16" 
-				termVerificationOnly="0"/>
-			     <NewTerminal 
-				termCrossRefID="53317" 
-				termCheckLimit="500.00" 
-				termPeripheral="63" 
-				termTypeID="172"
-				termVerificationOnly="0"/>
-			     <NewTerminal 
-				termCrossRefID="296223"
-				termCheckLimit="500.00" 
-				termPeripheral="63" 
-				termTypeID="637" 
-				termVerificationOnly="0"/>
-			     <NewTerminal 
-				termCrossRefID="296228"
-				termCheckLimit="500.00" 
-				termPeripheral="63" 
-				termTypeID="16"
-				termVerificationOnly="0"/>
-			     <NewTerminal 
-				termCrossRefID="296225" 
-				termCheckLimit="500.00" 
-				termPeripheral="63" 
-				termTypeID="637" 
-				termVerificationOnly="0"/>
-			</NewLocation>
-		</NewMerchant>
-	</Body>
-</Envelope>
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<RemoteAccessHeader xmlns="http://tempuri.org/GETI.eMagnus.WebServices/AppGateway">
+			<UserName>string</UserName>
+			<Password>string</Password>
+		</RemoteAccessHeader>
+	</soap:Header>
+	<soap:Body>
+		<BoardCertificationMerchants xmlns="http://tempuri.org/GETI.eMagnus.WebServices/AppGateway">
+			<DataPacket>
+				<Envelope>
+					<Body 
+						FileName="261407_28_May_2009_12_05_00_590.xml"
+						FileDate="2009-05-28T12:05:00.590">
+							<NewMerchant isoID="9999"
+								merchCrossRefID="261407"
+								merchName="Merchant Boarding"
+								merchTypeID="49"
+								merchServiceType="ACHDEBIT"
+								merchAddress1="123 Main Street"
+								merchCity="Destin"
+								merchState="FL"
+								merchZip="32541"
+								merchPhone="1231231234"
+								merchFlatFee="0.29"
+								merchNonFlatFee="0.29"
+								merchPercentFee="1.89"
+								merchComments="Food market"
+								merchReturnFee="1.00"
+								PromoCode="FALL2019">
+							<BusinessInfo merchOwnership="3"
+								merchAvgCheckAmount="50.00"
+								merchMaxCheckAmount="200.00"
+								merchTotalTimeInBusiness="456"/>
+							<NewLocation locName="Merchant 2282"
+								locCrossRefID="261407"
+								locAddress1="123 Main Street"
+								locCity="Destin"
+								locState="FL"
+								locZip="32541"
+								locPhone="1231231234"
+								locStatementFee="10.00"
+								locMinimumFee="25.00"
+								locFeesRoutingNum="490000018"
+								locFeesAccountNum="123456789">
+							<Statement locStatementAddress1="PO Box 1234"
+								locStatementAddress2="Test"
+								locStatementCity="Destin"
+								locStatementState="FL"
+								locStatementZip="32541"
+								locStatementAttn="Garey Larrabee"/>
+							<NewPOC pocPrimary="1"
+								pocFirstName="John"
+								pocLastName="Doe"
+								pocTitle="Owner"
+								pocComments=""
+								pocAddress="123 Main Street"
+								pocCity="Destin"
+								pocState="FL"
+								pocZip="32541"
+								pocDOB="1945-10-26"
+								pocSSN="123121111"/>
+							<NewPOC pocPrimary="0"
+								pocFirstName="Bob"
+								pocLastName="Smith"
+								pocTitle="Clerk"
+								pocComments=""
+								pocAddress="123 Main Street"
+								pocCity="Destin"
+								pocState="FL"
+								pocZip="32541"
+								pocDOB="1947-10-26"
+								pocSSN="123859874"/>
+								<Terminal merchServiceType="ACHDEBIT"
+									merchMRDCImageFee="0.01"
+									merchFlatFee="0.29"
+									merchNonFlatFee="0.29"
+									merchPercentFee="1.89"
+									merchReturnFee="1.00">
+									<ConsumerConvFee ChargeCCF="1"
+										FeeAmount="8.00"
+										FeeIncludedInTrans="0"
+										FeeIsPercent="0"
+										FeePercentMinAmount="1"
+										FeePercentMaxAmount="9"/>
+										<NewTerminal termCrossRefID="374891"
+											termCheckLimit="500.00"
+											termPeripheral="0"
+											termTypeID="962"
+											termVerificationOnly="0"/>
+								</Terminal>
+								<Terminal merchServiceType="ACHDEBITB2B"
+									merchMRDCImageFee="0.01"
+									merchFlatFee="0.29"
+									merchNonFlatFee="0.29"
+									merchPercentFee="1.89"
+									merchReturnFee="1.00">
+									<ConsumerConvFee ChargeCCF="1"
+										FeeAmount="8.00"
+										FeeIncludedInTrans="0"
+										FeeIsPercent="0"
+										FeePercentMinAmount="1"
+										FeePercentMaxAmount="9"/>
+										<NewTerminal termCrossRefID="374891"
+											termCheckLimit="500.00"
+											termPeripheral="0"
+											termTypeID="962"
+											termVerificationOnly="0"/>
+								</Terminal>
+								<Terminal merchServiceType="WEBBILLPAYGW"
+									merchMRDCImageFee="0.01"
+									merchFlatFee="0.29"
+									merchNonFlatFee="0.29"
+									merchPercentFee="1.89"
+									merchReturnFee="1.00">
+									<ConsumerConvFee ChargeCCF="1"
+										FeeAmount="8.00"
+										FeeIncludedInTrans="0"
+										FeeIsPercent="0"
+										FeePercentMinAmount="1"
+										FeePercentMaxAmount="9"/>
+										<NewTerminal termCrossRefID="374891"
+											termCheckLimit="500.00"
+											termPeripheral="0"
+											termTypeID="962"
+											termVerificationOnly="0"/>
+								</Terminal>
+							</NewLocation>
+						</NewMerchant>
+					</Body>
+				</Envelope>
+			</DataPacket>
+		</BoardCertificationMerchants>
+	</soap:Body>
+</soap:Envelope>
 ```
 
 ## **The Application Gateway XML data packet may contain the following elements:**
@@ -648,6 +706,14 @@ The data packet is an XML string sent using the BoardCertificationMerchant_X and
 
 _NOTE: Terminal IDs may change based on the data created._
 
+**Merchant Boarding Samples**:
+  - Board Merchant with multiple SEC Codes Sample:  [NewMerchantsAppSample](https://demo.eftchecks.com/webservices/schemas/app/Example/NewMerchantsAppSample.xml)
+  - Board Location with multiple SEC Codes Sample:  [NewLocationsAppSample](https://demo.eftchecks.com/webservices/schemas/app/Example/NewLocationsAppSample.xml)
+  - Create Terminals with multiple SEC Codes Sample:  [NewTerminalsAppSample](https://demo.eftchecks.com/webservices/schemas/app/Example/NewTerminalsAppSample.xml)
+
+
+<summary><i>Old Methods - Click to expand</i></summary>
+
 **Application Samples**:
   - ACH Application Sample:  [NewMerchAppSample_ACH](/Merchant%20Application%20Gateway/XML%20Samples/NewMerchAppSample_ACH.xml)
   - Check21 Application Sample:  [NewMerchAppSample_Check21](/Merchant%20Application%20Gateway/XML%20Samples/NewMerchAppSample_Check21.xml)
@@ -668,23 +734,18 @@ _NOTE: Terminal IDs may change based on the data created._
   - Check21 Create Terminal Application Sample:  [NewTermCreateAppSample_Check21](/Merchant%20Application%20Gateway/XML%20Samples/NewTermCreateAppSample_Check21.xml)
   - Gift Create Terminal Application Sample:  [NewTermCreateAppSample_Gift](/Merchant%20Application%20Gateway/XML%20Samples/NewTermCreateAppSample_Gift.xml)
 
-**Other Samples**:
-  - Board Merchant with multiple SEC Codes Sample:  [NewMerchantsAppSample](/Merchant%20Application%20Gateway/XML%20Samples/NewMerchantsAppSample.xml)
-  - Board Location with multiple SEC Codes Sample:  [NewLocationsAppSample](/Merchant%20Application%20Gateway/XML%20Samples/NewLocationsAppSample.xml)
-  - Create Terminals with multiple SEC Codes Sample:  [NewTerminalsAppSample](/Merchant%20Application%20Gateway/XML%20Samples/NewTerminalsAppSample.xml)
-
-
+</Details>
 
 ## **Data Types**
 Each element in the XML data packet that is sent to the Application Gateway has a data type that defines the format of the data contained within the element.  The XSD defines which elements are of what data type.  A list and links to the available data types is located below.
 
-  - [Application Gateway Types](/Merchant%20Application%20Gateway/Data%20Types/AppGatewayTypes.xsd)
+  - [Application Gateway Types](http://demo.eftchecks.com/webservices/Schemas/Types/AppGatewayTypes.xsd)
 
-  - [Merchant Simple Types](/Merchant%20Application%20Gateway/Data%20Types/MerchantSimpleTypes.xsd)
+  - [Merchant Simple Types](http://demo.eftchecks.com/webservices/Schemas/Types/MerchantSimpleTypes.xsd)
 
-  - [Terminal Simple Types](/Merchant%20Application%20Gateway/Data%20Types/TerminalSimpleTypes.xsd)
+  - [Terminal Simple Types](http://demo.eftchecks.com/webservices/Schemas/Types/TerminalSimpleTypes.xsd)
 
-  - [States and Provinces](/Merchant%20Application%20Gateway/Data%20Types/StatesAndProvincesSimpleType.xsd)
+  - [States and Provinces](http://demo.eftchecks.com/webservices/Schemas/Types/StatesAndProvincesSimpleType.xsd)
 
  <!-- ### **Supporting Documents**
 
@@ -725,6 +786,14 @@ Each element in the XML data packet that is sent to the Application Gateway has 
 
 The example Schema file paths would be as follows:
 
+### **Merchant Boarding Schema** 
+
+  - Board Merchant Application Schema: [NewMerchantApp](https://demo.eftchecks.com/webservices/schemas/app/NewMerchantsApp.xsd)
+  - Board Location Application Schema: [NewLocationsApp](https://demo.eftchecks.com/webservices/schemas/app/NewLocationsApp.xsd)
+  - Create Terminal Application Schema: [NewTerminalsApp](https://demo.eftchecks.com/webservices/schemas/app/NewTerminalsApp.xsd)
+
+<summary><i>Old Methods - Click to expand</i></summary>
+
 ### **ACH Schema** 
 
  - ACH Application Schema:  [NewMerchApp_ACH](/Merchant%20Application%20Gateway/XSD%20to%20Use/ACH%20Schema/NewMerchApp_ACH.xsd)
@@ -752,13 +821,10 @@ The example Schema file paths would be as follows:
 
 <sub>For the latest Gift XSD Schemas see: [Gift XSD Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Gift%20Schema)</sub>
 
-### **Other Schema** 
+</Details>
 
-  - Board Merchant Application Schema: [NewMerchantApp](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema/NewMerchantsApp.xsd)
-  - Board Location Application Schema: [NewLocationsApp](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema/NewLocationsApp.xsd)
-  - Create Terminal Application Schema: [NewTerminalsApp](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema/NewTerminalsApp.xsd)
 
-<sub>For the latest Other XSD Schemas see: [Check21 XSD Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema)</sub>
+
 
 
 ## **Response**
@@ -892,88 +958,142 @@ EXCEPTION Element – Example as a child of the RESPONSE element
 ### **Sample SOAP Message**
 
 ```XML
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:app="http://tempuri.org/GETI.eMagnus.WebServices/AppGateway">
-  <soapenv:Header>
-    <app:RemoteAccessHeader>
-      <app:UserName> GATEWAYUserName </app:UserName>
-      <app:Password> GATEWAYPassword</app:Password>
-     </app:RemoteAccessHeader>
-  </soapenv:Header>
-  <soapenv:Body>
-    <app:BoardCertificationMerchant_ACH>
-      <app:DataPacket>
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;Envelope&gt;
-&lt;Body 
-                                    FileName=&quot;261407_28_May_2009_12_05_00_590.xml&quot; 
-FileDate=&quot;2009-05-28T12:05:00.590&quot;&gt;
-&lt;NewMerchant 
-isoID=&quot;9999&quot; 
-merchCrossRefID=&quot;261407&quot; 
-merchName=&quot;Test Merchant ACH 1&quot; 
-merchTypeID=&quot;49&quot; 
-merchServiceType=&quot;GOLD&quot; 
-merchAddress1=&quot;123 Main Street&quot; 
-merchCity=&quot;Destin&quot; 
-merchState=&quot;FL&quot; 
-merchZip=&quot;32541&quot; 
-merchPhone=&quot;1231231234&quot; 
-merchAchFlatFee=&quot;0.29&quot; 
-merchNonAchFlatFee=&quot;0.29&quot; 
-merchPercentFee=&quot;1.89&quot; 
-merchComments=&quot;Food market&quot; 
-merchReturnFee=&quot;1.00&quot;/&gt;
-&lt;BusinessInfo 
-merchOwnership=&quot;3&quot; 
-merchAvgCheckAmount=&quot;50.00&quot; 
-merchMaxCheckAmount=&quot;200.00&quot; 
-merchTotalTimeInBusiness=&quot;456&quot; /&gt;
-&lt;NewLocation 
-locName=&quot;Test Merchant&quot; 
-locCrossRefID=&quot;261407&quot; 
-locAddress1=&quot;123 Main Street&quot; 
-locCity=&quot;Destin&quot; 
-locState=&quot;FL&quot; 
-locZip=&quot;32541&quot; 
-locPhone=&quot;1231231234&quot; 
-locStatementFee=&quot;10.00&quot; 
-locMinimumFee=&quot;25.00&quot; 
-locFeesRoutingNum=&quot;490000018&quot; 
-locFeesAccountNum=&quot;123456789&quot;&gt;
-locTaxPayerID=&quot;123456789&quot; 
-locTaxPayerName=&quot;Test&quot;&gt;
-&lt;Statement 
-locStatementAddress1=&quot;PO Box 1234&quot; 
-locStatementCity=&quot;Destin&quot; 
-locStatementState=&quot;FL&quot; 
-locStatementZip=&quot;32541&quot; 
-locStatementAttn=&quot;Garey Larrabee&quot; /&gt;
-&lt;NewPOC 
-pocPrimary=&quot;1&quot; 
-pocFirstName=&quot;John&quot; 
-pocLastName=&quot;Doe&quot; 
-pocTitle=&quot;Owner&quot; 
-pocComments=&quot;&quot; 
-pocAddress=&quot;123 Main Street&quot; 
-pocCity=&quot;Destin&quot; 
-pocState=&quot;FL&quot; 
-pocZip=&quot;32541&quot; 
-pocDOB=&quot;1945-10-26&quot; 
-pocSSN=&quot;123121111&quot; /&gt;
-&lt;NewTerminal 
-termCrossRefID=&quot;41680&quot; 
-termCheckLimit=&quot;500.00&quot; 
-termPeripheral=&quot;63&quot; 
-termTypeID=&quot;16&quot; 
-termVerificationOnly=&quot;0&quot; /&gt;
-&lt;/NewLocation&gt;
-&lt;/NewMerchant&gt;
-&lt;/Body&gt;
-&lt;/Envelope&gt;
-</app:DataPacket>
-    </app:BoardCertificationMerchant_ACH>
-  </soapenv:Body>
-</soapenv:Envelope>
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<RemoteAccessHeader xmlns="http://tempuri.org/GETI.eMagnus.WebServices/AppGateway">
+			<UserName>string</UserName>
+			<Password>string</Password>
+		</RemoteAccessHeader>
+	</soap:Header>
+	<soap:Body>
+		<BoardCertificationMerchants xmlns="http://tempuri.org/GETI.eMagnus.WebServices/AppGateway">
+			<DataPacket>
+				&lt;Envelope&gt;
+					&lt;Body 
+						FileName=&quot;261407_28_May_2009_12_05_00_590.xml&quot;
+						FileDate=&quot;2009-05-28T12:05:00.590&quot;&gt;
+							&lt;NewMerchant isoID=&quot;9999&quot;
+								merchCrossRefID=&quot;261407&quot;
+								merchName=&quot;Merchant Boarding&quot;
+								merchTypeID=&quot;49&quot;
+								merchServiceType=&quot;ACHDEBIT&quot;
+								merchAddress1=&quot;123 Main Street&quot;
+								merchCity=&quot;Destin&quot;
+								merchState=&quot;FL&quot;
+								merchZip=&quot;32541&quot;
+								merchPhone=&quot;1231231234&quot;
+								merchFlatFee=&quot;0.29&quot;
+								merchNonFlatFee=&quot;0.29&quot;
+								merchPercentFee=&quot;1.89&quot;
+								merchComments=&quot;Food market&quot;
+								merchReturnFee=&quot;1.00&quot;
+								PromoCode=&quot;FALL2019&quot;&gt;
+							&lt;BusinessInfo merchOwnership=&quot;3&quot;
+								merchAvgCheckAmount=&quot;50.00&quot;
+								merchMaxCheckAmount=&quot;200.00&quot;
+								merchTotalTimeInBusiness=&quot;456&quot;/&gt;
+							&lt;NewLocation locName=&quot;Merchant 2282&quot;
+								locCrossRefID=&quot;261407&quot;
+								locAddress1=&quot;123 Main Street&quot;
+								locCity=&quot;Destin&quot;
+								locState=&quot;FL&quot;
+								locZip=&quot;32541&quot;
+								locPhone=&quot;1231231234&quot;
+								locStatementFee=&quot;10.00&quot;
+								locMinimumFee=&quot;25.00&quot;
+								locFeesRoutingNum=&quot;490000018&quot;
+								locFeesAccountNum=&quot;123456789&quot;&gt;
+							&lt;Statement locStatementAddress1=&quot;PO Box 1234&quot;
+								locStatementAddress2=&quot;Test&quot;
+								locStatementCity=&quot;Destin&quot;
+								locStatementState=&quot;FL&quot;
+								locStatementZip=&quot;32541&quot;
+								locStatementAttn=&quot;Garey Larrabee&quot;/&gt;
+							&lt;NewPOC pocPrimary=&quot;1&quot;
+								pocFirstName=&quot;John&quot;
+								pocLastName=&quot;Doe&quot;
+								pocTitle=&quot;Owner&quot;
+								pocComments=&quot;&quot;
+								pocAddress=&quot;123 Main Street&quot;
+								pocCity=&quot;Destin&quot;
+								pocState=&quot;FL&quot;
+								pocZip=&quot;32541&quot;
+								pocDOB=&quot;1945-10-26&quot;
+								pocSSN=&quot;123121111&quot;/&gt;
+							&lt;NewPOC pocPrimary=&quot;0&quot;
+								pocFirstName=&quot;Bob&quot;
+								pocLastName=&quot;Smith&quot;
+								pocTitle=&quot;Clerk&quot;
+								pocComments=&quot;&quot;
+								pocAddress=&quot;123 Main Street&quot;
+								pocCity=&quot;Destin&quot;
+								pocState=&quot;FL&quot;
+								pocZip=&quot;32541&quot;
+								pocDOB=&quot;1947-10-26&quot;
+								pocSSN=&quot;123859874&quot;/&gt;
+								&lt;Terminal merchServiceType=&quot;ACHDEBIT&quot;
+									merchMRDCImageFee=&quot;0.01&quot;
+									merchFlatFee=&quot;0.29&quot;
+									merchNonFlatFee=&quot;0.29&quot;
+									merchPercentFee=&quot;1.89&quot;
+									merchReturnFee=&quot;1.00&quot;&gt;
+									&lt;ConsumerConvFee ChargeCCF=&quot;1&quot;
+										FeeAmount=&quot;8.00&quot;
+										FeeIncludedInTrans=&quot;0&quot;
+										FeeIsPercent=&quot;0&quot;
+										FeePercentMinAmount=&quot;1&quot;
+										FeePercentMaxAmount=&quot;9&quot;/&gt;
+										&lt;NewTerminal termCrossRefID=&quot;374891&quot;
+											termCheckLimit=&quot;500.00&quot;
+											termPeripheral=&quot;0&quot;
+											termTypeID=&quot;962&quot;
+											termVerificationOnly=&quot;0&quot;/&gt;
+								&lt;/Terminal&gt;
+								&lt;Terminal merchServiceType=&quot;ACHDEBITB2B&quot;
+									merchMRDCImageFee=&quot;0.01&quot;
+									merchFlatFee=&quot;0.29&quot;
+									merchNonFlatFee=&quot;0.29&quot;
+									merchPercentFee=&quot;1.89&quot;
+									merchReturnFee=&quot;1.00&quot;&gt;
+									&lt;ConsumerConvFee ChargeCCF=&quot;1&quot;
+										FeeAmount=&quot;8.00&quot;
+										FeeIncludedInTrans=&quot;0&quot;
+										FeeIsPercent=&quot;0&quot;
+										FeePercentMinAmount=&quot;1&quot;
+										FeePercentMaxAmount=&quot;9&quot;/&gt;
+										&lt;NewTerminal termCrossRefID=&quot;374891&quot;
+											termCheckLimit=&quot;500.00&quot;
+											termPeripheral=&quot;0&quot;
+											termTypeID=&quot;962&quot;
+											termVerificationOnly=&quot;0&quot;/&gt;
+								&lt;/Terminal&gt;
+								&lt;Terminal merchServiceType=&quot;WEBBILLPAYGW&quot;
+									merchMRDCImageFee=&quot;0.01&quot;
+									merchFlatFee=&quot;0.29&quot;
+									merchNonFlatFee=&quot;0.29&quot;
+									merchPercentFee=&quot;1.89&quot;
+									merchReturnFee=&quot;1.00&quot;&gt;
+									&lt;ConsumerConvFee ChargeCCF=&quot;1&quot;
+										FeeAmount=&quot;8.00&quot;
+										FeeIncludedInTrans=&quot;0&quot;
+										FeeIsPercent=&quot;0&quot;
+										FeePercentMinAmount=&quot;1&quot;
+										FeePercentMaxAmount=&quot;9&quot;/&gt;
+										&lt;NewTerminal termCrossRefID=&quot;374891&quot;
+											termCheckLimit=&quot;500.00&quot;
+											termPeripheral=&quot;0&quot;
+											termTypeID=&quot;962&quot;
+											termVerificationOnly=&quot;0&quot;/&gt;
+								&lt;/Terminal&gt;
+							&lt;/NewLocation&gt;
+						&lt;/NewMerchant&gt;
+					&lt;/Body&gt;
+				&lt;/Envelope&gt;
+			</DataPacket>
+		</BoardCertificationMerchants>
+	</soap:Body>
+</soap:Envelope>
 ```
 
 ## **Contact Information**
