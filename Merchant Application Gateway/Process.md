@@ -1,4 +1,5 @@
 
+
 # **Overview**
 
 Our Application Gateway is designed to accommodate various input requirements, allowing development of a single interface configured to handle many different scenarios.
@@ -14,14 +15,10 @@ We use Extensible Markup Language (XML), to send data packet requests and receiv
      - [SOAP Header](Process.md#soap-header)
 4. [Web Methods](Process.md#web-methods)
      - [Certification](Process.md#certification-methods)
-     	- [ACH Certification Methods](Process.md#ach-certification-methods)
-     	- [Check21 Certification Methods](Process.md#check21-certification-methods)
-     	- [Gift Certification Methods](Process.md#gift-certification-methods)
+	     - [Merchant Boarding Certification Methods](Process.md#Merchant-Boarding-Certification-Methods)
      	- [Other Certification Methods](Process.md#other-certification-methods)
      - [Production](Process.md#production-methods)
-     	- [ACH Production Methods](Process.md#ach-certification-methods)
-     	- [Check21 Production Methods](Process.md#check21-production-methods)
-     	- [Gift Production Methods](Process.md#gift-production-methods)
+ 	     - [Merchant Boarding Methods](Process.md#Merchant-Boarding-Methods)
      	- [Other Productions Methods](Process.md#other-productions-methods)
 5. [Data Packet - XML Specification](Process.md#data-packet--xml-specification)
      - [Merchant Application XML Example](Process.md#merchant-application-xml-example)
@@ -95,7 +92,7 @@ _NOTE: Board Location and Board Terminal will use the Data from Board Merchant._
 
 Before you are able to go into production, Paya Services requires that you certify your solution using the follow web methods. These methods do not create live transactions within the banking system but allow you to setup your solution for testing and certifying purposes.
 
-### **ACH Certification Methods**
+### **Merchant Boarding Certification Methods**
 
 - [**BoardCertificationMerchants**](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/BoardCertificationMerchants.md)
 
@@ -247,7 +244,7 @@ Before you are able to go into production, Paya Services requires that you certi
   - **Request**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#request) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#request-1)
   - **Response**: [SOAP 1.1](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#response) | [SOAP 1.2](/Merchant%20Application%20Gateway/Web%20Methods/Certification%20Methods/RequestCertificationMerchantCancellation.md#response-1)
 
-## Production Methods
+## Merchant Boarding Methods
 
 Once you have **certified** with our Paya Services team you will need to use the Production Methods listed below to create live transaction within the banking system.
 
