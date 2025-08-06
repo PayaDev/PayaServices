@@ -1268,6 +1268,32 @@ If needed an Authorization Message for a previously processed transaction can be
  
 _NOTE: If Authorization Gateway Request IDs are duplicated for a given Terminal, only the last Authorization Message for the pairing will be returned._ 
 
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetArchivedResponseResponse xmlns="http://tempuri.org/GETI.eMagnus.WebServices/AuthGateway">
+         <GetArchivedResponseResult><?xml version="1.0"?>
+            <RESPONSE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" REQUEST_ID="5957313">
+               <VALIDATION_MESSAGE>
+                  <RESULT>Passed</RESULT>
+                  <SCHEMA_FILE_PATH>http://getigateway.eftchecks.com/webservices/Schemas/WEB/Ng_CheckVerificationOnlyDLOptional.xsd</SCHEMA_FILE_PATH>
+               </VALIDATION_MESSAGE>
+               <AUTHORIZATION_MESSAGE>
+                  <TRANSACTION_ID/>
+                  <RESPONSE_TYPE>A</RESPONSE_TYPE>
+                  <RESPONSE_TYPE_TEXT>APPROVED</RESPONSE_TYPE_TEXT>
+                  <RESULT_CODE>0</RESULT_CODE>
+                  <TYPE_CODE>256</TYPE_CODE>
+                  <CODE>AUTH NUM 272-121</CODE>
+                  <MESSAGE>This item was reported with acceptable, positive data found in recent or current transactions.</MESSAGE>
+               </AUTHORIZATION_MESSAGE>
+            </RESPONSE>
+         </GetArchivedResponseResult>
+      </GetArchivedResponseResponse>
+   </soap:Body>
+</soap:Envelope>
+```
 
 # **Sample Code**
 
