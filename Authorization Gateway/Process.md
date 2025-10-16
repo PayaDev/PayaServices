@@ -307,7 +307,7 @@ _NOTE:  Methods with Token will operate the same as those without tokens. Tokens
 #### **What do the different identifiers mean?**
 Each request XML Data Packet must contain a valid identifier for its schema. The identifier you use will change depending on the context of the transaction being sent. Your integration team will become more familiar with the different identifiers as you begin to work on each milestone. However, a list of all the valid identifiers can be found below.  
 
-•	**Authorize (A):** This is used in schemas for POP, TEL, WEB, BOC and Check 21 to indicate that an authorization is requested for the XML Data Packet being sent.  It is also used to process credit transactions.
+•	**Authorize (A):** This is used in schemas for POP, TEL, WEB, BOC and Check 21 to indicate that an authorization is requested for the XML Data Packet being sent. 
 
 •	**Recurring (R):** This is used in schemas for PPD, CCD, TEL and WEB to indicate that an authorization is requested for a single or reoccurring transaction.
 
@@ -1170,7 +1170,8 @@ When reversing a previously approved single certification check you will need to
  - MESSAGE:  REVERSAL ACCEPTED
 
 ### **Credit**
-When processing a single certification check for Authorization you will need to invoke the ProcessSingleCertificationCheck web method.  A credit transaction is processed with a negative sign in front of the amount.  Set the routing number to 490000018 in the ROUTING_NUMBER element of the request XML Data Packet. You will also have to set the value of the IDENTIFER element to “R” if you are using a PPD or CCD schema or “A” for all other schemas.  If the request XML Data Packet is valid then this routing number will trigger the Authorization Gateway to return a response with the following information to the host system:
+Credits are only available for the PPD and CCD SEC codes.
+When processing a single certification check for Authorization you will need to invoke the ProcessSingleCertificationCheck web method.  A credit transaction is processed with a negative sign in front of the amount.  Set the routing number to 490000018 in the ROUTING_NUMBER element of the request XML Data Packet. You will also have to set the value of the IDENTIFER element to “R”. If the request XML Data Packet is valid then this routing number will trigger the Authorization Gateway to return a response with the following information to the host system:
 
  - RESPONSE_TYPE:  A
  - RESPONSE_TYPE_TEXT:  APPROVED
