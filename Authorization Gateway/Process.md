@@ -1441,15 +1441,11 @@ public string GetCertificationTerminalSettings()
 ## **Code Sample Kits**
 
 Java, VB.Net and PHP Sample Kits are available via FTP.
+If you would like access to these, please contact EFT-Integration@nuvei.com for credentials.
 
-FTP: 		sftp.eftchecks.com
-
-UserID:     	SampleKits
-
-Password:   	60cJSK13%0ymgzab
 
 ## **Contact Information**
 For questions or to receive certification and live username/passwords and URLs please contact:
 
 Integration Department
-integration@eftsupport.com
+EFT-Integration@nuvei.com
