@@ -1,4 +1,3 @@
-
 # Overview
 
 The Authorization Gateway is designed to accommodate various input requirements based on a given terminal’s settings. This allows for the development of a single interface that can be easily configured to handle many different scenarios.
@@ -14,7 +13,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 2. [Connection Method](Process.md#connection-method)
 3. [Submission](Process.md#submissions)
      - [SOAP Header](Process.md#soap-header)
-5. [Web Methods](Process.md#web-methods)
+4. [Web Methods](Process.md#web-methods)
      - [SEC Codes](Process.md#what-are-the-different-standard-entry-class-sec-codes)
      - [Certification Methods](Process.md#certification-methods)
      	- [Certification Web Methods](Process.md#certification-methods)
@@ -36,11 +35,11 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 	      	- [ProcessSingleCheckWithToken](Process.md#processsinglecheckwithtoken)
 	      	- [GetToken](Process.md#gettoken)
 	      	- [ParseMICR](Process.md#parsemicr)
-6. [Data Packet - XML Specification](Process.md#data-packet--xml-specification)
+5. [Data Packet - XML Specification](Process.md#data-packet--xml-specification)
      - [Terminal Settings - XML Specification](Process.md#terminal-settings---xml-specification)
      - [Authorization Gateway XML Data Packet Example](Process.md#authorization-gateway-xml-data-packet-example)
      - [Authorization Gateway XML Data Packet with Token Example](Process.md#authorization-gateway-xml-data-packet-with-token-example)
-7. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
+6. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
      - [Special Characters](Process.md#special-Characters)
      - [Standard XML & XSD Templates](Process.md#standard-templates)  
 		- [PPD Templates](Process.md#ppd-templates)  
@@ -56,10 +55,10 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 			- [Check21 Templates](Process.md#check21-xml-templates)
 		- [Templates for Mobile](Process.md#templates-for-mobile-remote-deposit-capture) 
 			- [Pop Templates for Mobile](Process.md#pop-xml-templates-for-mobile)  
-			- [Check21 Templates for Mobile](Process.md##check21-xml-templates-for-mobile)
-9. [Data Types](Process.md#data-types)
-10. [Validation Handling](Process.md#validation-handling)
-11. [Responses](Process.md#responses)
+			- [Check21 Templates for Mobile](Process.md#check21-xml-templates-for-mobile)
+7. [Data Types](Process.md#data-types)
+8. [Validation Handling](Process.md#validation-handling)
+9. [Responses](Process.md#responses)
      - [Validation Messages Response](Process.md#validation-message-response)
      	- [Validation Message Example - Success Response](Process.md#validation-message-response)
      	- [Validation Message Example - Failure Response](Process.md#validation-message-example--failure-response)
@@ -69,7 +68,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Authorization Message Response with Token](Process.md#authorization-message-response-with-token)
      	- [Authorization Message Example with Token](Process.md#authorization-message-example-with-token)
 			
-12. [Single Certification Check Types](Process.md#single-certification-check-types)		
+10. [Single Certification Check Types](Process.md#single-certification-check-types)		
      - [Process Single Certification Check - Check Limit Exceeded](Process.md#check-limit-exceeded)
      - [Process Single Certification Check - Decline](Process.md#decline)
      - [Process Single Certification Check - Void](Process.md#void)
@@ -79,15 +78,15 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Process Single Certification Check - Represented Check](Process.md#represented-check)
      - [Process Single Certification Check - No ACH](Process.md#no-ach)
      - [Process Single Certification Check - MICR ERROR](Process.md#micr-error)
-13. [Exception Handling](Process.md#exception-handling)
+11. [Exception Handling](Process.md#exception-handling)
      - [EXCEPTION Element - Example as a child of the RESPONSE element](Process.md#exception-element--example-as-a-child-of-the-response-element)
-14. [Request an Archived Response](Process.md#request-an-archived-response)
-15. [Sample Code](Process.md#sample-code)     
+12. [Request an Archived Response](Process.md#request-an-archived-response)
+13. [Sample Code](Process.md#sample-code)     
 	- [VB.NET](Process.md#vbnet)
 	- [C#](Process.md#c)
 	- [SOAP Message Sample](Process.md#soap-message-sample)
-16. [Code Sample Kits](Process.md#code-sample-kits)
-17. [Contact Information](Process.md#contact-information)
+14. [Code Sample Kits](Process.md#code-sample-kits)
+15. [Contact Information](Process.md#contact-information)
 
 
 # **Connection Method**
@@ -522,16 +521,10 @@ XSD: [Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20G
 > A special note about Credit transactions (i.e. where you are initiating a new transaction to debit the merchant and credit a consumer, and not refunding a previous transaction) - please use the below testing terminals as address information is required for compliance purposes.
 
 
-| **PPD**  | Certification Terminal ID  | |  |  
-|----|----|----|----|
-|  | Guaranteed 1000's  Non-Guaranteed 2000's |  [XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](https://demo.eftchecks.com/webservices/schemas/PPD) |
-| CreditCheckNoVerificationDLOptional  |  1818/2818 | [XSD](http://demo.eftchecks.com/webservices/Schemas/PPD/CreditCheckNoVerificationPhoneOptional.xsd) |  [XSD](http://demo.eftchecks.com/webservices/Schemas/PPD/Ng_CreditCheckNoVerificationPhoneOptional.xsd) |
-
-
-| **CCD**  | Certification Terminal ID  | |  |  
-|----|----|----|----|
-|  | Guaranteed 1000's  Non-Guaranteed 2000's | [XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](https://demo.eftchecks.com/webservices/schemas/PPD) |
-| CreditCheckNoVerificationDLOptional  |  1918/2918 | [XSD](http://demo.eftchecks.com/webservices/Schemas/CCD/CreditCheckNoVerificationPhoneOptional.xsd) |  [XSD](http://demo.eftchecks.com/webservices/Schemas/CCD/Ng_CreditCheckNoVerificationPhoneOptional.xsd) |
+| SEC Type | Description | Guaranteed Terminal ID | Non-Guaranteed Terminal ID | Guaranteed XSD | Non‑Guaranteed XSD |
+|------|-------------|------------|---------------|----------------|---------------------|
+| PPD | CreditCheckNoVerificationDLOptional | 1818 | 2818 | [XSD](http://demo.eftchecks.com/webservices/Schemas/PPD/CreditCheckNoVerificationPhoneOptional.xsd) | [XSD](http://demo.eftchecks.com/webservices/Schemas/PPD/Ng_CreditCheckNoVerificationPhoneOptional.xsd) |
+| CCD | CreditCheckNoVerificationDLOptional | 1918 | 2918 | [XSD](http://demo.eftchecks.com/webservices/Schemas/CCD/CreditCheckNoVerificationPhoneOptional.xsd) | [XSD](http://demo.eftchecks.com/webservices/Schemas/CCD/Ng_CreditCheckNoVerificationPhoneOptional.xsd) |
 
 
 
