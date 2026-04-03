@@ -41,7 +41,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Authorization Gateway XML Data Packet Example](Process.md#authorization-gateway-xml-data-packet-example)
      - [Authorization Gateway XML Data Packet with Token Example](Process.md#authorization-gateway-xml-data-packet-with-token-example)
 7. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
-     - [Special Characters](Process.md#Special-Characters)
+     - [Special Characters](Process.md#special-Characters)
      - [Standard XML & XSD Templates](Process.md#standard-templates)  
 		- [PPD Templates](Process.md#ppd-templates)  
 		- [CCD Templates](Process.md#ccd-templates)  
@@ -56,7 +56,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
 			- [Check21 Templates](Process.md#check21-xml-templates)
 		- [Templates for Mobile](Process.md#templates-for-mobile-remote-deposit-capture) 
 			- [Pop Templates for Mobile](Process.md#pop-xml-templates-for-mobile)  
-			- [Check21 Templates for Mobile](Process.md#templates-for-mobile-remote-deposit-capture)
+			- [Check21 Templates for Mobile](Process.md##check21-xml-templates-for-mobile)
 9. [Data Types](Process.md#data-types)
 10. [Validation Handling](Process.md#validation-handling)
 11. [Responses](Process.md#responses)
@@ -154,7 +154,7 @@ Before you are able to go into production, Paya Services requires that you certi
 - #### [**AuthGatewayCertification**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md)	
   - **Description**:  This method will validate that the interface is sending a data packet that conforms to its schema and is used during interface testing and certification.
    - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#request-1)
-  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods//AuthGatewayCertification.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response-1)
+  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response-1)
 
 - #### [**ProcessSingleCertificationCheck**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheck.md)
   - **Description**:  This method will run the authorization for a single certification check based on the settings for the provided certification terminal. A list of the valid certification routing numbers and their purpose is below.  This method is used during interface testing and certification.
@@ -177,13 +177,13 @@ Definition using tokens and hyperlink to samples of SOAP request and response.
 
 - #### [**GetCertificationTerminalSettings**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/GetCertificationTerminalSettings.md)
   - **Description**: This method will return the Terminal Settings for a certification Terminal. This method is used during interface testing and certification.
-  - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#request-1)
-  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods//AuthGatewayCertification.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response-1)
+  - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/GetCertificationTerminalSettings.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/GetCertificationTerminalSettings.md#request-1)
+  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/GetCertificationTerminalSettings.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/GetCertificationTerminalSettings.md#response-1)
 
 - #### [**AuthGatewayCertification**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md)
   - **Description**:  This method will validate that the interface is sending a data packet that conforms to its schema and is used during interface testing and certification.
   - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#request-1)
-  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods//AuthGatewayCertification.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response-1)
+  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/AuthGatewayCertification.md#response-1)
 
 - #### [**ProcessSingleCertificationCheckWithToken**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md)
   - **Description**:  This method will run the authorization for a single certification check based on the settings for the provided certification terminal using either, a given Token or the Account Type, Routing Number, and Account Number. A list of the valid certification routing numbers and their purpose is below.  This method is used during interface testing and certification.
@@ -196,7 +196,7 @@ Definition using tokens and hyperlink to samples of SOAP request and response.
   |     490000047         |     35944FB3E1DA4663868455AF630F45BE    |     Re-Presented Check    |
 
   - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#request-1)
-  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheck.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#response-1)
+  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#response-1)
 
 _NOTE: Using this method by passing the Account Type, Routing Number, and Account Number will create a TOKEN and pass it back in the Authorization Message Response. If a TOKEN already exists for the Account Type, Routing Number, and Account Number, the current TOKEN will be passed back in the Authorization Message Response._
 
@@ -262,8 +262,8 @@ _NOTE: Using this method by passing the Account Type, Routing Number, and Accoun
 - #### [**ParseMICR**](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ParseMICR.md)
   - **Replaces**: [**ParseCertificationMICR**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ParseCertificationMICR.md)
   - **Description**:  This method will return an Account Type, Routing Number and Account Number.
-  - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ParseMICR.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ParseMICR.md#request-1)
-  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ParseMICR.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ParseMICR.md#response-1)
+  - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ParseMICR.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ParseMICR.md#request-1)
+  - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ParseMICR.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ParseMICR.md#response-1)
 
 ## **Terminal Settings - XML Specification**
 
