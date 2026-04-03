@@ -432,10 +432,10 @@ This XML data packet example contains all available elements. The elements and d
   </TRANSACTION>
  </AUTH_GATEWAY>
 ```
-The Authorization Gateway XML data packet may contain the following elements:
 
 **Key Difference:** The <ACCOUNT> section can use a single <TOKEN> element (32-character alphanumeric) instead of separate <ROUTING_NUMBER>, <ACCOUNT_NUMBER>, and <ACCOUNT_TYPE> elements.
 
+The Authorization Gateway XML data packet may contain the following elements:
 | | |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AUTH_GATEWAY: | Is the parent element and contains all other elements within the Terminal Settings XML document. |
