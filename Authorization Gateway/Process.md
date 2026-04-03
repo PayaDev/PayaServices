@@ -40,7 +40,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Authorization Gateway XML Data Packet Example](Process.md#authorization-gateway-xml-data-packet-example)
      - [Authorization Gateway XML Data Packet with Token Example](Process.md#authorization-gateway-xml-data-packet-with-token-example)
 6. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
-     - [Special Characters](Process.md#special-Characters)
+     - [Special Characters](Process.md#special-characters)
      - [Standard XML & XSD Templates](Process.md#standard-templates)  
 		- [PPD Templates](Process.md#ppd-templates)  
 		- [CCD Templates](Process.md#ccd-templates)  
@@ -96,7 +96,8 @@ https://demo.eftchecks.com/webservices/AuthGateway.asmx
 
 A username and password for certification will be provided upon request.
 
-_NOTE:  A live webservice address, username, and password will be supplied upon successful certification. **These credentials are unique to your solution and should be obfuscated in your code and not be shared with anyone.**_
+> [!NOTE]  
+> A live webservice address, username, and password will be supplied upon successful certification. **These credentials are unique to your solution and should be obfuscated in your code and not be shared with anyone.**_
 
 # **Submissions**
 
@@ -197,7 +198,8 @@ Definition using tokens and hyperlink to samples of SOAP request and response.
   - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#request-1)
   - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/ProcessSingleCertificationCheckWithToken.md#response-1)
 
-_NOTE: Using this method by passing the Account Type, Routing Number, and Account Number will create a TOKEN and pass it back in the Authorization Message Response. If a TOKEN already exists for the Account Type, Routing Number, and Account Number, the current TOKEN will be passed back in the Authorization Message Response._
+> [!NOTE] 
+> Using this method by passing the Account Type, Routing Number, and Account Number will create a TOKEN and pass it back in the Authorization Message Response. If a TOKEN already exists for the Account Type, Routing Number, and Account Number, the current TOKEN will be passed back in the Authorization Message Response._
 
 - #### [**GetCertificationToken**](/Authorization%20Gateway/Web%20Methods/Certification%20Methods/GetCertificationToken.md)
   - **Description**: This method will return a Token for the Account Type, Routing Number, and Account Number.
@@ -249,7 +251,8 @@ Definition using tokens and hyperlink to a sample SOAP request and response.
    - **Request**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckWithToken.md#request) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckWithToken.md#request-1)
   - **Response**: [SOAP 1.1](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckWithToken.md#response) | [SOAP 1.2](/Authorization%20Gateway/Web%20Methods/Production%20Methods/ProcessSingleCheckWithToken.md#response-1)
 
-_NOTE: Using this method by passing the Account Type, Routing Number, and Account Number will create a TOKEN and pass it back in the Authorization Message Response. If a TOKEN already exists for the Account Type, Routing Number, and Account Number, the current TOKEN will be passed back in the Authorization Message Response._
+> [!NOTE]
+> Using this method by passing the Account Type, Routing Number, and Account Number will create a TOKEN and pass it back in the Authorization Message Response. If a TOKEN already exists for the Account Type, Routing Number, and Account Number, the current TOKEN will be passed back in the Authorization Message Response._
 
 
 - #### [**GetToken**](/Authorization%20Gateway/Web%20Methods/Production%20Methods/GetToken.md)
@@ -300,7 +303,8 @@ The Terminal Settings XML will contain the following elements:
 ## <a name="DataPacketXMLSpecification"></a>**Data Packet – XML Specification**
 The data packet is an XML string sent using the AuthGatewayCertification, ProcessSingleCheck, and ProcessSingleCheckWithToken web methods. The XML data packet must conform to the XSD specified in the Terminal Settings. The XML Template provided in the Terminal Settings can be used as a basis to create the Data Packet.
 
-_NOTE:  Methods with Token will operate the same as those without tokens. Tokens are used in place of Account Type, Routing Number, and Account Number._
+> [!NOTE]
+>  Methods with Token will operate the same as those without tokens. Tokens are used in place of Account Type, Routing Number, and Account Number._
 
 
 #### **What do the different identifiers mean?**
@@ -388,7 +392,7 @@ This XML data packet example contains all available elements. The elements and d
 <?xml version=”1.0” encoding=”utf-8”?>
 <AUTH_GATEWAY REQUEST_ID=”4654”>
   <TRANSACTION>
-    <TRANSACTION_ID>0a4f529d-70fd-4ddb-b909b5598dc07579</TRANSACTION_ID>
+    <TRANSACTION_ID>0a4f529d-70fd-4ddb-b909-b5598dc07579</TRANSACTION_ID>
       <MERCHANT>
 	  <TERMINAL_ID>1113</TERMINAL_ID>
       </MERCHANT>
@@ -414,7 +418,7 @@ This XML data packet example contains all available elements. The elements and d
  	  <COURTESY_CARD_ID></COURTESY_CARD_ID>
  	  <IDENTITY>
      	    <DOB_YEAR>1961</DOB_YEAR>
-     	  </IDENTITY>
+ 	  </IDENTITY>
    	</CONSUMER>
    	<CHECK>
    	  <CHECK_AMOUNT>1.25</CHECK_AMOUNT>
@@ -915,8 +919,10 @@ A matrix of the available XML Templates and XSD Schemas when using OCR for each 
 Each element in the XML data packet that is sent to the Authorization Gateway has a data type that defines the format of the data contained within the element.  The Terminal’s XSD defines which elements are of what data type. A list and links to the available data types is located below.
  - States and Provinces
 https://demo.eftchecks.com/Webservices/schemas/types/StatesAndProvincesSimpleType.xsd
+
  - Authorization Gateway Types
-https://demo.eftchecks.com/Webservices/schemas/types/AuthGatewayTypes.xsd 
+https://demo.eftchecks.com/Webservices/schemas/types/AuthGatewayTypes.xsd
+
  - Authorization Gateway Response Types
 https://demo.eftchecks.com/Webservices/schemas/types/AuthGatewayResponseTypes.xsd
 
@@ -960,7 +966,7 @@ Validation Message Example – Success Response
 This data packet failed validation because the Driver’s License Information is required by the XSD and was not provided in the data packet.
 ```XML
 <?xml version=”1.0” encoding=”utf-8” ?>
-<RESPONSE xmlns:xsd=”http://www.w3.org/2001/XMLSchema” xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” REQUEST_ID=”4654”>>
+<RESPONSE xmlns:xsd=”http://www.w3.org/2001/XMLSchema” xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” REQUEST_ID=”4654”>
    <VALIDATION_MESSAGE>
       <RESULT>Failed</RESULT> 
       <SCHEMA_FILE_PATH>http://localhost/GETI.eMagnus.WebServices/Schemas/PPD/CheckNoVerificationDLRequired.xsd</SCHEMA_FILE_PATH>
@@ -993,7 +999,7 @@ The ProcessSingleCheck web method will process a valid XML data packet and retur
 ### Authorization Message Example 
 ```XML
 <?xml version=”1.0” encoding=”utf-8” ?> 
-<RESPONSE xmlns:xsd=”http://www.w3.org/2001/XMLSchema”xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” REQUEST_ID=”4654”>
+<RESPONSE xmlns:xsd=”http://www.w3.org/2001/XMLSchema” xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” REQUEST_ID=”4654”>
    <VALIDATION_MESSAGE>
       <RESULT>Passed</RESULT> 
       <SCHEMA_FILE_PATH>http://localhost/GETI.eMagnus.WebServices/Schemas/PPD/CheckVerificationIdentityVerificationDLRequired.xsd</SCHEMA_FILE_PATH> 
@@ -1217,7 +1223,8 @@ Each time a valid data packet request is processed the Authorization Message tha
 
 If needed an Authorization Message for a previously processed transaction can be requested again by invoking the GetArchivedResponse web method.  It is important to note that the transaction is not processed again, only the original Authorization Message that was archived is returned. Each Authorization Message is archived along with the unique user defined Request ID and Terminal ID that was provided in the data packet request. The GetArchivedResponse web method accepts the Request ID as an input parameter and will return the original Authorization Message for the given Request ID and Terminal ID.
  
-_NOTE: If Authorization Gateway Request IDs are duplicated for a given Terminal, only the last Authorization Message for the pairing will be returned._ 
+> [!NOTE] 
+> If Authorization Gateway Request IDs are duplicated for a given Terminal, only the last Authorization Message for the pairing will be returned._ 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
