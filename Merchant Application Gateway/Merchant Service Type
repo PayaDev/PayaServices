@@ -1,0 +1,166 @@
+| Code | Description |
+|------|-------------|
+| 1 | Antique Shops |
+| 2 | Appliances Electrical Repair |
+| 3 | Art Dealers Art Galleries |
+| 4 | Artists Supplies |
+| 5 | Auto Dealers New All Depts |
+| 6 | Auto And Home Supplies |
+| 7 | Auto Parking Lots Garages |
+| 8 | Auto Parts Stores |
+| 9 | Auto Rentals And Leasing |
+| 10 | Auto Paint Top Body |
+| 11 | Auto Repair |
+| 12 | Auto Sales Used Only |
+| 13 | Automotive Glass |
+| 14 | Automotive Tire Stores |
+| 16 | Bakeries |
+| 17 | Barber Beauty Shops |
+| 18 | Bicycle Sales Service |
+| 19 | Billiards Tables And Supplies |
+| 20 | Boats Dealers All |
+| 21 | Boats Dealers Parts Service |
+| 22 | Book Stores |
+| 23 | Bridal Shops And Accessories |
+| 24 | Building Materials |
+| 25 | Camera And Photo Supplies |
+| 26 | Car Stereo Cellular Phones And Pagers |
+| 27 | Car Washes |
+| 28 | Card Gift Shops |
+| 29 | Cigar Stores |
+| 30 | Clothing |
+| 31 | Computers And Software Retail Only |
+| 32 | Contractors |
+| 33 | Convenience Stores |
+| 34 | Cosmetic Beauty Supplies |
+| 35 | Department Stores |
+| 36 | Drug Stores And Pharmacies |
+| 37 | Dry Cleaners |
+| 38 | Electrical Contractors |
+| 39 | Eyeglass Stores |
+| 40 | Fabric Stores |
+| 41 | Floor Covering |
+| 42 | Florists |
+| 43 | Funeral Homes Crematories |
+| 44 | Furniture Stores |
+| 45 | Garden Lawn Supply |
+| 46 | Gas Stations |
+| 47 | Glass Stores |
+| 48 | Golf Course Pro Shop |
+| 49 | Grocery Supermarket |
+| 50 | Hardware Stores |
+| 51 | Health Food Stores |
+| 52 | Heating Air |
+| 53 | Heavy Equipment Truck Repair |
+| 54 | Heavy Equipment Rentals |
+| 55 | Heavy Equipment Sales |
+| 56 | Hospitals Clinics |
+| 57 | Hotels Motels |
+| 58 | Housewares |
+| 59 | Jewelry Sales |
+| 60 | Liquor Stores |
+| 61 | Locksmiths |
+| 62 | Maintenance Cleaning Service |
+| 63 | Motorcycle Dealers All |
+| 64 | Motorhome Dealers |
+| 65 | Moving Storage Delivery |
+| 66 | Muffler Shops |
+| 67 | Music Stores Instruments |
+| 68 | Office Supply |
+| 69 | Oil Change Shop |
+| 70 | Optometrists |
+| 71 | Pet Shops |
+| 72 | Physicians |
+| 73 | Pizza Parlors |
+| 74 | Postal Shipping Services |
+| 75 | Print Shops |
+| 76 | Record Shops |
+| 77 | Rental Trucks And Trailers |
+| 78 | Restaurants |
+| 79 | Salvage And Wrecking |
+| 80 | Secondhand Stores |
+| 81 | Sporting Goods Stores |
+| 82 | Stereo Sales Radio Sales |
+| 83 | Swimming Pool Sales |
+| 84 | Tack Shop Equestrian Supplies |
+| 85 | Towing Services |
+| 87 | Transmission Repair |
+| 88 | Vacuum Cleaner Sales |
+| 89 | Veterinary Clinics Hospitals |
+| 90 | Video Stores |
+| 91 | Childcare Daycare Preschool |
+| 92 | Meat And Seafood |
+| 93 | Dental |
+| 94 | Plumbing Contractors |
+| 95 | Employment Agency |
+| 96 | Sign Shops |
+| 97 | Carpentry |
+| 98 | Physical Therapy |
+| 99 | Motorcycle Repair |
+| 100 | Nail Products Manicures |
+| 101 | Meetings Events Banquets Parties |
+| 102 | Accounting Firms |
+| 103 | Uniforms |
+| 104 | Bar Lounge |
+| 105 | Tanning Salons |
+| 106 | Hospital Equipment Supplies |
+| 107 | Metal Fabricators |
+| 108 | Transportation Services |
+| 109 | Fitness Spa Gym |
+| 110 | Pawn Shop |
+| 111 | Bowling Alley |
+| 112 | Legal Services |
+| 113 | Religious Organizations |
+| 115 | School |
+| 116 | Pet Grooming |
+| 117 | Electronics Electronic Repair |
+| 118 | Travel Agency |
+| 119 | Tattoo Body Piercing Parlor |
+| 120 | Insurance Agency |
+| 121 | Recreational |
+| 122 | Real Estate |
+| 123 | Trailer Sales |
+| 124 | Exterminators |
+| 125 | Party Supply Store |
+| 126 | Entertainment |
+| 127 | Bail Bonds |
+| 128 | Hobby Shop |
+| 129 | Craft Shop |
+| 130 | Photo Studio |
+| 131 | Marina |
+| 132 | Security And Alarms |
+| 133 | Auto Detailing |
+| 134 | Furniture Rental |
+| 135 | General Merchandise |
+| 136 | Leather Goods Luggage |
+| 137 | Waste Removal |
+| 138 | Tool Rentals |
+| 139 | Other |
+| 140 | Casino Gambling |
+| 141 | Window Sales |
+| 142 | Municipalities Utility Companies |
+| 143 | Bingo |
+| 144 | Charities Donations |
+| 145 | Landscaping |
+| 146 | Advertising Marketing |
+| 147 | Discount Benefits Packages |
+| 148 | Auto Warranty Extended Warranty |
+| 149 | ID Protection |
+| 150 | Credit Repair Credit Counseling |
+| 151 | Check Cashing |
+| 152 | Upholstery Furniture Repair |
+| 153 | Dating Escort Services |
+| 154 | Loan Modification |
+| 155 | Financing Debt Collection |
+| 156 | Internet Phone Services |
+| 157 | Voice Over Internet Protocol VOIP |
+| 158 | Merchant Services |
+| 159 | Merchant Cash Advance |
+| 160 | Billing Service |
+| 161 | Membership Organizations |
+| 162 | Manufacturing |
+| 163 | Consulting Coaching |
+| 164 | Nursing Homes In Home Care |
+| 165 | Franchise |
+| 166 | Wholesale Distributing |
+| 167 | Firearms Ammo |
