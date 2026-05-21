@@ -534,8 +534,6 @@ XSD: [Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20G
 
 ### PPD Templates
 
-<Details>
-<summary><i>Click to expand</i></summary>
 	
 XML Templates
 | **PPD**                                                    | Certification Terminal ID                |             |              |           |             |                       |
@@ -577,15 +575,10 @@ Corresponding XSD Template
 | CreditCheckVerificationOnlyDLRequired                  | 1815 / 2815                              |      X      |       X      |           | [XSD](https://demo.eftchecks.com/webservices/schemas/PPD/CreditCheckVerificationOnlyDLRequired.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/PPD/Ng_CreditCheckVerificationOnlyDLRequired.xsd)                 |
 | CreditIdentityVerificationOnlyDLOptional               | 1816 / 2816                              |             |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/PPD/CreditIdentityVerificationOnlyDLOptional.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/PPD/Ng_CreditIdentityVerificationOnlyDLOptional.xsd)                 |
 | CreditIdentityVerificationOnlyDLRequired               | 1817 / 2817                              |      X      |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/PPD/CreditIdentityVerificationOnlyDLRequired.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/PPD/Ng_CreditIdentityVerificationOnlyDLRequired.xsd)                 |
-</Details>
-
-
 
 
 ### CCD Templates
 
-<Details>
-<summary><i>Click to expand</i></summary>
 	
 XML Templates
 | **CCD**                                                    | Certification Terminal ID                |             |              |           |             |                       |
@@ -628,12 +621,9 @@ Corresponding XSD Template
 | CreditIdentityVerificationOnlyDLOptional               | 1916 / 2916                              |             |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/CCD/CreditIdentityVerificationOnlyDLOptional.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/CCD/Ng_CreditIdentityVerificationOnlyDLOptional.xsd)                 |
 | CreditIdentityVerificationOnlyDLRequired               | 1917 / 2917                              |      X      |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/CCD/CreditIdentityVerificationOnlyDLRequired.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/CCD/Ng_CreditIdentityVerificationOnlyDLRequired.xsd)                 |
 
-</Details>
 
 ### WEB Templates
 
-<Details>
-<summary><i>Click to expand</i></summary>
 	
 XML Templates
 | **WEB**                                                    | Certification Terminal ID                |             |              |           |             |                       |
@@ -666,12 +656,9 @@ Corresponding XSD Template
 | Ng_IdentityVerificationOnlyDLOptional                    | 2316                              |             |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/WEB/Ng_IdentityVerificationOnlyDLOptional.xsd)                 |
 | Ng_IdentityVerificationOnlyDLRequired                    | 2317                              |      X      |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/WEB/Ng_IdentityVerificationOnlyDLRequired.xsd)                 |
 
-</Details>
 
 ### TEL Templates
 
-<Details>	
-<summary><i>Click to expand</i></summary>
 	
 XML Templates
 | **TEL**                                                    | Certification Terminal ID                |             |              |           |             |                       |
@@ -704,12 +691,9 @@ Corresponding XSD Template
 | IdentityVerificationOnlyDLOptional                    | 1216 / 2216                              |             |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/TEL/IdentityVerificationOnlyDLOptional.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/TEL/Ng_IdentityVerificationOnlyDLOptional.xsd)                 |
 | IdentityVerificationOnlyDLRequired                    | 1217 / 2217                              |      X      |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/TEL/IdentityVerificationOnlyDLRequired.xsd)            | [XSD](https://demo.eftchecks.com/webservices/schemas/TEL/Ng_IdentityVerificationOnlyDLRequired.xsd)                 |
 
-</Details>
 
 ### POP Templates
 
-<Details>
-<summary><i>Click to expand</i></summary>
 	
 XML Templates
 | **POP**                                                    | Certification Terminal ID                |             |              |           |             |                       |
@@ -742,12 +726,9 @@ Corresponding XSD Template
 | IdentityVerificationOnlyDLOptional                    | 1116                              |             |              |     X     | [XSD](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas/IdentityVerificationOnlyDLOptional.xsd)                 |
 | IdentityVerificationOnlyDLRequired                    | 1117                              |      X      |              |     X     | [XSD](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas/IdentityVerificationOnlyDLRequired.xsd)                 |
 
-</Details>
 
 ### Check21 Templates
 
-<Details>
-<summary><i>Click to expand</i></summary>
 	
 XML Templates
 | **Check21**                                                    | Certification Terminal ID                |             |              |           |             |                       |
@@ -780,7 +761,6 @@ Corresponding XSD Template
 | IdentityVerificationOnlyDLOptional                    | 1616                              |             |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/C21/IdentityVerificationOnlyDLOptional.xsd)                 |
 | IdentityVerificationOnlyDLRequired                    | 1617                              |      X      |              |     X     | [XSD](https://demo.eftchecks.com/webservices/schemas/C21/IdentityVerificationOnlyDLRequired.xsd)                 |
 
-</Details>
 
 ### BOC Templates
 
@@ -836,8 +816,6 @@ A matrix of the available XML Templates and XSD Schemas when using OCR for each 
 
 ## **Templates for OCR**
 
-<Details>
-<summary><i>Click to expand</i></summary>
 
 ### **POP XML Templates**
 
@@ -873,12 +851,9 @@ A matrix of the available XML Templates and XSD Schemas when using OCR for each 
 | OCRIdentityVerification | 4123                      | O          | X           |     X     | [XML](https://demo.eftchecks.com/webservices/schemas/C21/Templates/OCRIdentityVerification.xml)     | [XSD](https://demo.eftchecks.com/webservices/schemas/C21/OCRIdentityVerificationDLRequired.xsd)     |
 | OCRIdentityVerification | 4133                      | F          | X           |     X     | [XML](https://demo.eftchecks.com/webservices/schemas/C21/Templates/OCRIdentityVerification.xml)     | [XSD](https://demo.eftchecks.com/webservices/schemas/C21/OCRIdentityVerificationDLRequired.xsd)     |
 
-</Details>
 
 ## **Templates for Mobile Remote Deposit Capture**
 
-<Details>
-<summary><i>Click to expand</i></summary>
 
 ### **POP XML templates for Mobile** 
 |     Template            | Certification Terminal ID | Trans Type | DL Required | Verify ID | XML Template | XSD Template |
@@ -913,7 +888,7 @@ A matrix of the available XML Templates and XSD Schemas when using OCR for each 
 | OCRIdentityVerification | 4323                      | O          | X           |     X     | [XML](https://demo.eftchecks.com/webservices/schemas/C21/Templates/OCRIdentityVerification.xml)     | [XSD](https://demo.eftchecks.com/webservices/schemas/C21/OCRIdentityVerificationDLRequired.xsd)     |
 | OCRIdentityVerification | 4333                      | F          | X           |     X     | [XML](https://demo.eftchecks.com/webservices/schemas/C21/Templates/OCRIdentityVerification.xml)     | [XSD](https://demo.eftchecks.com/webservices/schemas/C21/OCRIdentityVerificationDLRequired.xsd)     |
 
-</Details>
+
 
 ## **Data Types**
 Each element in the XML data packet that is sent to the Authorization Gateway has a data type that defines the format of the data contained within the element.  The Terminal’s XSD defines which elements are of what data type. A list and links to the available data types is located below.
